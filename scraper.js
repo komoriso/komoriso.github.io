@@ -20,10 +20,13 @@ async function scrapeChuko() {
                 const author = titleAuthor.pop();
                 const title = titleAuthor.join(' ');
                 
+                const dateText = $(el).find('p.book_desc').text().trim();
+                const m = dateText.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
+                const published_date = m ? `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}` : new Date().toISOString().split('T')[0];
                 books.push({
                     title: title || parts[0],
                     author: author || '',
-                    published_date: new Date().toISOString().split('T')[0],
+                    published_date,
                     url: bookUrl
                 });
             }
@@ -57,11 +60,13 @@ async function scrapeChikuma() {
                     
                     const label = rawText.includes('ちくま学芸文庫') ? 'ちくま学芸文庫' : 'ちくま新書';
                     
+                    const dateText = $(el).find('.whitespace-nowrap.font-romanCon').text().trim();
+                    const published_date = dateText ? dateText.replace(/\//g, '-') : new Date().toISOString().split('T')[0];
                     books.push({
                         labelName: label,
                         title: title.trim(),
                         author: author.trim(),
-                        published_date: new Date().toISOString().split('T')[0],
+                        published_date,
                         url: bookUrl
                     });
                 }
@@ -96,11 +101,13 @@ async function scrapeIwanami() {
                     const authorPart = parentText.replace(linkText, '').replace(/著|編|訳|監修/g, '').trim();
                     const bookUrl = href.startsWith('http') ? href : 'https://www.iwanami.co.jp' + href;
                     
+                    const dateText = $(el).parent().parent().find('p.date span').first().text().trim();
+                    const published_date = dateText ? dateText.replace(/\./g, '-') : new Date().toISOString().split('T')[0];
                     books.push({
                         labelName: target.name,
                         title: linkText,
                         author: authorPart,
-                        published_date: new Date().toISOString().split('T')[0],
+                        published_date,
                         url: bookUrl
                     });
                 }
@@ -123,6 +130,19 @@ async function scrapeIwanami() {
     return uniqueBooks;
 }
 
+async function fetchKodanshaDate(bookUrl) {
+    try {
+        const response = await axios.get(bookUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+        const $ = cheerio.load(response.data);
+        const dateText = $('p[class*="col-start-2"]').text().trim();
+        const m = dateText.match(/(\d{4})年(\d{2})月(\d{2})日/);
+        return m ? `${m[1]}-${m[2]}-${m[3]}` : null;
+    } catch (err) {
+        console.error(`Kodansha detail fetch error (${bookUrl}):`, err.message);
+        return null;
+    }
+}
+
 async function scrapeKodansha() {
     const books = [];
     const targets = [
@@ -136,6 +156,7 @@ async function scrapeKodansha() {
             const response = await axios.get(target.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
             const $ = cheerio.load(response.data);
 
+            const entries = [];
             $('a[href*="/book/products/"]').each((i, el) => {
                 const title = $(el).find('strong').first().text().trim();
                 if (!title) return;
@@ -146,15 +167,13 @@ async function scrapeKodansha() {
 
                 const href = $(el).attr('href');
                 const bookUrl = href.startsWith('http') ? href : 'https://www.kodansha.co.jp' + href;
-
-                books.push({
-                    labelName: target.name,
-                    title,
-                    author,
-                    published_date: new Date().toISOString().split('T')[0],
-                    url: bookUrl
-                });
+                entries.push({ labelName: target.name, title, author, url: bookUrl });
             });
+
+            for (const entry of entries) {
+                const published_date = await fetchKodanshaDate(entry.url) ?? new Date().toISOString().split('T')[0];
+                books.push({ ...entry, published_date });
+            }
         } catch (err) {
             console.error(`Kodansha Scrape Error (${target.name}):`, err.message);
         }
@@ -177,7 +196,7 @@ async function saveBooksToDb(labelName, books) {
     return new Promise((resolve, reject) => {
         db.get('SELECT id FROM labels WHERE name = ?', [labelName], (err, row) => {
             if (err) return reject(err);
-            if (!row) return resolve(); // Label not found, skip
+            if (!row) return resolve({ successCount: 0, skipCount: 0 }); // Label not found, skip
             
             const labelId = row.id;
             let successCount = 0;
