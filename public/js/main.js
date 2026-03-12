@@ -47,22 +47,17 @@ const API_BASE = 'https://xin-kan-lan.onrender.com';
 
 async function initIndexPage() {
     try {
-        const response = await fetch(`${API_BASE}/api/books`);
-        if (!response.ok) throw new Error('API Error');
+        const response = await fetch('/public/books.json');
+        if (!response.ok) throw new Error('books.json not found');
         const data = await response.json();
-        
+
         document.getElementById('loading').style.display = 'none';
         document.getElementById('date-range').innerHTML = `
             対象期間: <strong>${data.range.start}</strong> 〜 <strong>${data.range.end}</strong>
         `;
-        
-        // Modify label name to link to drill down
-        const booksWithLinks = data.books.map(b => {
-             return { ...b, label_name: `<a href="/label.html?id=${b.label_id}" style="color:inherit;">${b.label_name}</a>` }
-        });
-        
-        renderBooks(booksWithLinks, document.getElementById('book-container'));
-        
+
+        renderBooks(data.books, document.getElementById('book-container'));
+
     } catch (err) {
         document.getElementById('loading').innerHTML = 'エラーが発生しました。データを取得できません。';
         console.error(err);

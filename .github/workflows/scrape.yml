@@ -1,0 +1,31 @@
+name: Scrape New Books
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # 毎週月曜 AM2:00 UTC（日本時間 AM11:00）
+  workflow_dispatch:      # 手動実行も可能
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run scraper
+        run: node generate-books-json.js
+
+      - name: Commit and push books.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/books.json
+          git diff --staged --quiet || git commit -m "Update books data $(date +'%Y-%m-%d') [skip ci]"
+          git push
