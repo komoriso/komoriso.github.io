@@ -77,9 +77,9 @@ async function scrapeIwanami() {
     const books = [];
     // Setup targets for Iwanami
     const targets = [
-        { name: '岩波新書', url: 'https://www.iwanami.co.jp/search/g8316.html' },
-        { name: '岩波文庫', url: 'https://www.iwanami.co.jp/search/g8608.html' },
-        { name: '岩波現代文庫', url: 'https://www.iwanami.co.jp/search/g8610.html' }
+        { name: '岩波新書', url: 'https://www.iwanami.co.jp/sin/' },
+        { name: '岩波文庫', url: 'https://www.iwanami.co.jp/bun/' },
+        { name: '岩波現代文庫', url: 'https://www.iwanami.co.jp/genbun/' }
     ];
 
     for (const target of targets) {
