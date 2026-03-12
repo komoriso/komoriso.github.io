@@ -46,10 +46,10 @@ async function scrapeChikuma() {
             const urlMatch = $(el).find('a').attr('href');
             const bookUrl = urlMatch ? (urlMatch.startsWith('http') ? urlMatch : 'https://www.chikumashobo.co.jp' + urlMatch) : url;
             
-            if (rawText.includes('ちくま新書') || rawText.includes('ちくまプリマー新書') || rawText.includes('ちくま学芸文庫')) {
+            if (rawText.includes('ちくま新書') || rawText.includes('ちくま学芸文庫')) {
                 const parts = rawText.split('著');
                 if (parts.length >= 2) {
-                    let beforeAuthor = parts[0].replace(/ちくま(プリマー)?新書/g, '').trim();
+                    let beforeAuthor = parts[0].replace(/ちくま新書/g, '').trim();
                     beforeAuthor = beforeAuthor.replace(/ちくま学芸文庫/g, '').trim();
                     const titleAuthor = beforeAuthor.split(' ');
                     const author = titleAuthor.length > 1 ? titleAuthor.pop() : '';
