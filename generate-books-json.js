@@ -24,8 +24,7 @@ async function scrapeChuko() {
                 const titleAuthor = parts[0].trim().split(' ');
                 const author = titleAuthor.pop();
                 const title = titleAuthor.join(' ');
-                const dateText = $(el).find('p.book_desc').text().trim();
-                const m = dateText.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
+                const m = rawText.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
                 const published_date = m ? `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}` : today.toISOString().split('T')[0];
                 books.push({ label_name: '中公新書', title: title || parts[0], author: author || '', published_date, url: bookUrl });
             }
@@ -54,8 +53,9 @@ async function scrapeChikuma() {
                     const author = titleAuthor.length > 1 ? titleAuthor.pop() : '';
                     const title = titleAuthor.join(' ') || beforeAuthor;
                     const label_name = rawText.includes('ちくま学芸文庫') ? 'ちくま学芸文庫' : 'ちくま新書';
-                    const dateText = $(el).find('.whitespace-nowrap.font-romanCon').text().trim();
-                    const published_date = dateText ? dateText.replace(/\//g, '-') : today.toISOString().split('T')[0];
+                    const dateRaw = $(el).parent().find('.whitespace-nowrap.font-romanCon').first().text().trim();
+                    const dm = dateRaw.match(/(\d{4})\/(\d{2})\/(\d{2})/);
+                    const published_date = dm ? `${dm[1]}-${dm[2]}-${dm[3]}` : today.toISOString().split('T')[0];
                     books.push({ label_name, title: title.trim(), author: author.trim(), published_date, url: bookUrl });
                 }
             }
@@ -84,8 +84,8 @@ async function scrapeIwanami() {
                     const parentText = $(el).parent().parent().text().replace(/\s+/g, ' ').trim();
                     const author = parentText.replace(linkText, '').replace(/著|編|訳|監修/g, '').trim();
                     const bookUrl = href.startsWith('http') ? href : 'https://www.iwanami.co.jp' + href;
-                    const dateText = $(el).parent().parent().find('p.date span').first().text().trim();
-                    const published_date = dateText ? dateText.replace(/\./g, '-') : today.toISOString().split('T')[0];
+                    const dm = parentText.match(/(\d{4})\.(\d{2})\.(\d{2})/);
+                    const published_date = dm ? `${dm[1]}-${dm[2]}-${dm[3]}` : today.toISOString().split('T')[0];
                     books.push({ label_name: target.label_name, title: linkText, author, published_date, url: bookUrl });
                 }
             });
@@ -107,9 +107,9 @@ async function fetchKodanshaDate(bookUrl) {
     try {
         const response = await axios.get(bookUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         const $ = cheerio.load(response.data);
-        const dateText = $('p[class*="col-start-2"]').text().trim();
-        const m = dateText.match(/(\d{4})年(\d{2})月(\d{2})日/);
-        return m ? `${m[1]}-${m[2]}-${m[3]}` : null;
+        const dateText = $('dd').filter((i, el) => /\d{4}年\d{1,2}月\d{1,2}日/.test($(el).text())).first().text().trim();
+        const m = dateText.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
+        return m ? `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}` : null;
     } catch (err) {
         console.error(`Kodansha detail fetch error (${bookUrl}):`, err.message);
         return null;
