@@ -123,6 +123,56 @@ async function scrapeIwanami() {
     return uniqueBooks;
 }
 
+async function scrapeKodansha() {
+    const books = [];
+    const targets = [
+        { name: '講談社現代新書', url: 'https://www.kodansha.co.jp/book/labels/gendai-shinsho' },
+        { name: 'ブルーバックス',  url: 'https://www.kodansha.co.jp/book/labels/bluebacks' },
+        { name: '講談社学術文庫', url: 'https://www.kodansha.co.jp/book/labels/g-bunko' }
+    ];
+
+    for (const target of targets) {
+        try {
+            const response = await axios.get(target.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+            const $ = cheerio.load(response.data);
+
+            $('a[href*="/book/products/"]').each((i, el) => {
+                const title = $(el).find('strong').first().text().trim();
+                if (!title) return;
+
+                const rawText = $(el).text().replace(/\s+/g, ' ').trim();
+                const authorMatch = rawText.match(/著[：:]\s*(\S+)/);
+                const author = authorMatch ? authorMatch[1].trim() : '';
+
+                const href = $(el).attr('href');
+                const bookUrl = href.startsWith('http') ? href : 'https://www.kodansha.co.jp' + href;
+
+                books.push({
+                    labelName: target.name,
+                    title,
+                    author,
+                    published_date: new Date().toISOString().split('T')[0],
+                    url: bookUrl
+                });
+            });
+        } catch (err) {
+            console.error(`Kodansha Scrape Error (${target.name}):`, err.message);
+        }
+    }
+
+    // Remove duplicates
+    const uniqueBooks = [];
+    const seen = new Set();
+    for (const b of books) {
+        const key = b.labelName + b.title;
+        if (!seen.has(key)) {
+            seen.add(key);
+            uniqueBooks.push(b);
+        }
+    }
+    return uniqueBooks;
+}
+
 async function saveBooksToDb(labelName, books) {
     return new Promise((resolve, reject) => {
         db.get('SELECT id FROM labels WHERE name = ?', [labelName], (err, row) => {
@@ -161,6 +211,7 @@ async function runScraper() {
     const chukoBooks = await scrapeChuko();
     const chikumaBooksGroup = await scrapeChikuma();
     const iwanamiBooksGroup = await scrapeIwanami();
+    const kodanshaBooksGroup = await scrapeKodansha();
 
     // Map results to labels
     const results = {
@@ -169,7 +220,10 @@ async function runScraper() {
         'ちくま学芸文庫': chikumaBooksGroup.filter(b => b.labelName === 'ちくま学芸文庫'),
         '岩波新書': iwanamiBooksGroup.filter(b => b.labelName === '岩波新書'),
         '岩波文庫': iwanamiBooksGroup.filter(b => b.labelName === '岩波文庫'),
-        '岩波現代文庫': iwanamiBooksGroup.filter(b => b.labelName === '岩波現代文庫')
+        '岩波現代文庫': iwanamiBooksGroup.filter(b => b.labelName === '岩波現代文庫'),
+        '講談社現代新書': kodanshaBooksGroup.filter(b => b.labelName === '講談社現代新書'),
+        'ブルーバックス': kodanshaBooksGroup.filter(b => b.labelName === 'ブルーバックス'),
+        '講談社学術文庫': kodanshaBooksGroup.filter(b => b.labelName === '講談社学術文庫')
     };
     
     let report = [];
@@ -197,4 +251,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { runScraper, scrapeIwanami, scrapeChuko, scrapeChikuma };
+module.exports = { runScraper, scrapeChuko, scrapeChikuma, scrapeIwanami, scrapeKodansha };
