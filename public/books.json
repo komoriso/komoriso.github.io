@@ -1,5 +1,324 @@
 {
-  "range": { "start": "", "end": "" },
-  "books": [],
-  "generated_at": ""
+  "range": {
+    "start": "2026-02-12",
+    "end": "2026-04-12"
+  },
+  "books": [
+    {
+      "label_name": "中公新書",
+      "title": "エリザベス女王 増補版 史上最長・最強のイギリス君主",
+      "author": "君塚直隆",
+      "published_date": "2026-03-12",
+      "url": "https://www.chuko.co.jp/shinsho/2026/02/102897.html"
+    },
+    {
+      "label_name": "中公新書",
+      "title": "明六社 森有礼、西周、福澤諭吉らが集った知的結社",
+      "author": "河野有理",
+      "published_date": "2026-03-12",
+      "url": "https://www.chuko.co.jp/shinsho/2026/02/102896.html"
+    },
+    {
+      "label_name": "中公新書",
+      "title": "懐疑論 古代ギリシアからデカルト、陰謀論まで",
+      "author": "古田徹也",
+      "published_date": "2026-03-12",
+      "url": "https://www.chuko.co.jp/shinsho/2026/02/102894.html"
+    },
+    {
+      "label_name": "中公新書",
+      "title": "戦国北条氏 関東の覇者、五代一〇〇年の軌跡",
+      "author": "山口博",
+      "published_date": "2026-03-12",
+      "url": "https://www.chuko.co.jp/shinsho/2026/02/102895.html"
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "図説 和菓子の歴史",
+      "author": "青木直己",
+      "published_date": "2026-03-12",
+      "url": "https://www.chikumashobo.co.jp/product/9784480097927/"
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "自分をたいせつにする本",
+      "author": "服部みれい",
+      "published_date": "2026-03-12",
+      "url": "https://www.chikumashobo.co.jp/product/9784480684011/"
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "おとなになるってどんなこと？",
+      "author": "吉本ばなな",
+      "published_date": "2026-03-12",
+      "url": "https://www.chikumashobo.co.jp/product/9784480689429/"
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "忙しい人のための美術館の歩き方",
+      "author": "ちいさな美術館の学芸員",
+      "published_date": "2026-03-12",
+      "url": "https://www.chikumashobo.co.jp/product/9784480076977/"
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "聞く技術 聞いてもらう技術",
+      "author": "東畑開人",
+      "published_date": "2026-03-12",
+      "url": "https://www.chikumashobo.co.jp/product/9784480075093/"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "整形外科 生活の質を支える",
+      "author": "田中 栄",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10160905.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "フィリピン",
+      "author": "日下 渉",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10160904.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "宗教のアメリカ",
+      "author": "藤本 龍児",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10160903.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "「共感」の思想史",
+      "author": "坂本 達哉",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10160902.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "学校のメンタルヘルス",
+      "author": "伊藤 美奈子",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10159287.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "ミケーネ文明",
+      "author": "周藤 芳幸",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10159286.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "彼女たちの「戦後」",
+      "author": "山本 昭宏",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10159285.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "日本の未来像",
+      "author": "広井 良典",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10159284.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "日本社会党",
+      "author": "福永 文夫",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10144357.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "老いと死のことば 日本の古典を読む",
+      "author": "鈴木 健一",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10155827.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "張作霖",
+      "author": "澁谷 由里",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10155826.html"
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "江戸町奉行所 与力・同心の世界",
+      "author": "滝口 正哉",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10155825.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "歴史的に考えること",
+      "author": "宇田川 幸大",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b656077.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "縄文時代を解き明かす",
+      "author": "阿部 芳郎",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b641570.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "平安のステキな！女性作家たち",
+      "author": "川村 裕子  早川 圭子 絵",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b633366.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "ボクの故郷は戦場になった",
+      "author": "重延 浩",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b629856.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "16テーマで知る 鎌倉武士の生活",
+      "author": "西田 友広",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b609325.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "ヨーロッパ史入門 市民革命から現代へ",
+      "author": "池上 俊一",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b597627.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "ヨーロッパ史入門 原形から近代への胎動",
+      "author": "池上 俊一",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b595699.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "森の日本史",
+      "author": "黒瀧 秀久",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b591617.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "食べものから学ぶ世界史",
+      "author": "平賀 緑",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b584818.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "ものがたり日本音楽史",
+      "author": "徳丸 吉彦",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b487930.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "ものがたり西洋音楽史",
+      "author": "近藤 譲",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b440448.html"
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "情熱でたどるスペイン史",
+      "author": "池上 俊一",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b431815.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "ハングルの世界",
+      "author": "水野 俊平",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b10154398.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "おとぎ話はなぜ残酷でハッピーエンドなのか",
+      "author": "ウェルズ 恵子",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b654993.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "翻訳に挑戦！ 名作の英語にふれる",
+      "author": "河島 弘美",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b643151.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "世界が広がる英文読解",
+      "author": "田中 健一",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b627735.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "読解力をきたえる英語名文30",
+      "author": "行方 昭夫",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b615169.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "世界の神話 躍動する女神たち",
+      "author": "沖田 瑞穂",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b609324.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "ひらめき！英語迷言教室",
+      "author": "右田 邦雄",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b605151.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "〈読む〉という冒険 イギリス児童文学の森へ",
+      "author": "佐藤 和哉",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b599125.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "自分を励ます英語名言101",
+      "author": "小池 直己  佐藤 誠司",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b548870.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "ポジティブになれる英語名言101",
+      "author": "小池 直己  佐藤 誠司",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b454637.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "覚えておきたい 基本英会話フレーズ130",
+      "author": "小池 直己",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b355598.html"
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "英語に好かれるとっておきの方法",
+      "author": "横山 カズ",
+      "published_date": "2026-03-12",
+      "url": "https://www.iwanami.co.jp/book/b243845.html"
+    }
+  ],
+  "generated_at": "2026-03-12T06:02:23.505Z"
 }
