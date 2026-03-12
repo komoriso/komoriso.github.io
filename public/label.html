@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レーベル詳細 | New Shinsho Books</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container animate-fade-in">
+        <header>
+            <div class="logo">
+                <h1 id="label-name">レーベル詳細</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="/index.html">← 一覧へ戻る</a>
+                <a href="/admin.html">管理ページ</a>
+            </nav>
+        </header>
+
+        <div class="meta-container">
+            <div class="meta-info" id="date-range">
+                読み込み中...
+            </div>
+        </div>
+
+        <div id="loading" class="loading">新刊情報を取得しています</div>
+        
+        <div id="book-container" class="book-grid" style="display: none;">
+            <!-- 書籍カードをここにJSで挿入 -->
+        </div>
+        
+        <div id="empty-state" class="empty-state" style="display: none;">
+            <h2>このレーベルには対象期間内の新刊はありません</h2>
+            <p>※ 対象は前後1ヶ月以内です。</p>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
