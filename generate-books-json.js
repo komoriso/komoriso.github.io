@@ -43,10 +43,10 @@ async function scrapeChikuma() {
             const rawText = $(el).text().replace(/\s+/g, ' ').trim();
             const urlMatch = $(el).find('a').attr('href');
             const bookUrl = urlMatch ? (urlMatch.startsWith('http') ? urlMatch : 'https://www.chikumashobo.co.jp' + urlMatch) : url;
-            if (rawText.includes('ちくま新書') || rawText.includes('ちくまプリマー新書') || rawText.includes('ちくま学芸文庫')) {
+            if (rawText.includes('ちくま新書') || rawText.includes('ちくま学芸文庫')) {
                 const parts = rawText.split('著');
                 if (parts.length >= 2) {
-                    let beforeAuthor = parts[0].replace(/ちくま(プリマー)?新書/g, '').replace(/ちくま学芸文庫/g, '').trim();
+                    let beforeAuthor = parts[0].replace(/ちくま新書/g, '').replace(/ちくま学芸文庫/g, '').trim();
                     const titleAuthor = beforeAuthor.split(' ');
                     const author = titleAuthor.length > 1 ? titleAuthor.pop() : '';
                     const title = titleAuthor.join(' ') || beforeAuthor;
@@ -64,9 +64,9 @@ async function scrapeChikuma() {
 async function scrapeIwanami() {
     const books = [];
     const targets = [
-        { label_name: '岩波新書', url: 'https://www.iwanami.co.jp/search/g8316.html' },
-        { label_name: '岩波文庫', url: 'https://www.iwanami.co.jp/search/g8608.html' },
-        { label_name: '岩波現代文庫', url: 'https://www.iwanami.co.jp/search/g8610.html' }
+        { label_name: '岩波新書', url: 'https://www.iwanami.co.jp/sin/' },
+        { label_name: '岩波文庫', url: 'https://www.iwanami.co.jp/bun/' },
+        { label_name: '岩波現代文庫', url: 'https://www.iwanami.co.jp/genbun/' }
     ];
     for (const target of targets) {
         try {
@@ -96,10 +96,45 @@ async function scrapeIwanami() {
     });
 }
 
+async function scrapeKodansha() {
+    const books = [];
+    const targets = [
+        { label_name: '講談社現代新書', url: 'https://www.kodansha.co.jp/book/labels/gendai-shinsho' },
+        { label_name: 'ブルーバックス',  url: 'https://www.kodansha.co.jp/book/labels/bluebacks' },
+        { label_name: '講談社学術文庫', url: 'https://www.kodansha.co.jp/book/labels/g-bunko' }
+    ];
+    for (const target of targets) {
+        try {
+            const response = await axios.get(target.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+            const $ = cheerio.load(response.data);
+            $('a[href*="/book/products/"]').each((i, el) => {
+                const title = $(el).find('strong').first().text().trim();
+                if (!title) return;
+                const rawText = $(el).text().replace(/\s+/g, ' ').trim();
+                const authorMatch = rawText.match(/著[：:]\s*(\S+)/);
+                const author = authorMatch ? authorMatch[1].trim() : '';
+                const href = $(el).attr('href');
+                const bookUrl = href.startsWith('http') ? href : 'https://www.kodansha.co.jp' + href;
+                books.push({ label_name: target.label_name, title, author, published_date: today.toISOString().split('T')[0], url: bookUrl });
+            });
+        } catch (err) {
+            console.error(`Kodansha Scrape Error (${target.label_name}):`, err.message);
+        }
+    }
+    // Remove duplicates
+    const seen = new Set();
+    return books.filter(b => {
+        const key = b.label_name + b.title;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+}
+
 async function main() {
     console.log('Scraping started at', new Date().toISOString());
-    const [chuko, chikuma, iwanami] = await Promise.all([scrapeChuko(), scrapeChikuma(), scrapeIwanami()]);
-    const allBooks = [...chuko, ...chikuma, ...iwanami];
+    const [chuko, chikuma, iwanami, kodansha] = await Promise.all([scrapeChuko(), scrapeChikuma(), scrapeIwanami(), scrapeKodansha()]);
+    const allBooks = [...chuko, ...chikuma, ...iwanami, ...kodansha];
 
     const output = {
         range: { start: startStr, end: endStr },
