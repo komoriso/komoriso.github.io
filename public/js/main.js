@@ -43,9 +43,11 @@ function renderBooks(books, containerElement) {
     containerElement.style.display = 'grid';
 }
 
+const API_BASE = 'https://xin-kan-lan.onrender.com';
+
 async function initIndexPage() {
     try {
-        const response = await fetch('/api/books');
+        const response = await fetch(`${API_BASE}/api/books`);
         if (!response.ok) throw new Error('API Error');
         const data = await response.json();
         
@@ -78,13 +80,13 @@ async function initLabelPage() {
     
     try {
         // Fetch label name
-        const labelRes = await fetch(`/api/labels/${labelId}`);
+        const labelRes = await fetch(`${API_BASE}/api/labels/${labelId}`);
         if (labelRes.ok) {
             const labelData = await labelRes.json();
             document.getElementById('label-name').textContent = labelData.name;
         }
 
-        const response = await fetch(`/api/labels/${labelId}/books`);
+        const response = await fetch(`${API_BASE}/api/labels/${labelId}/books`);
         if (!response.ok) throw new Error('API Error');
         const data = await response.json();
         
@@ -103,7 +105,7 @@ async function initLabelPage() {
 
 function initAdminPage() {
     const loadLabels = async () => {
-        const response = await fetch('/api/labels');
+        const response = await fetch(`${API_BASE}/api/labels`);
         const labels = await response.json();
         const tbody = document.getElementById('label-table-body');
         tbody.innerHTML = '';
@@ -131,7 +133,7 @@ function initAdminPage() {
     window.toggleLabel = async (id, currentStatus, name, url) => {
         const newStatus = currentStatus === 1 ? 0 : 1;
         try {
-            await fetch(`/api/labels/${id}`, {
+            await fetch(`${API_BASE}/api/labels/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, url, is_active: newStatus })
@@ -145,7 +147,7 @@ function initAdminPage() {
     window.deleteLabel = async (id) => {
         if (!confirm('本当に削除しますか？')) return;
         try {
-            await fetch(`/api/labels/${id}`, {
+            await fetch(`${API_BASE}/api/labels/${id}`, {
                 method: 'DELETE'
             });
             loadLabels();
@@ -160,7 +162,7 @@ function initAdminPage() {
         const url = document.getElementById('new-url').value;
         
         try {
-            const res = await fetch('/api/labels', {
+            const res = await fetch(`${API_BASE}/api/labels`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, url, is_active: 1 })
