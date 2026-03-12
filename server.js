@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const { db } = require('./db');
+const { db, initDb } = require('./db');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -120,8 +120,10 @@ app.delete('/api/labels/:id', (req, res) => {
 
 // Start Server
 if (require.main === module) {
-    app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
+    initDb().then(() => {
+        app.listen(PORT, () => {
+            console.log(`Server is running on port ${PORT}`);
+        });
     });
 }
 
