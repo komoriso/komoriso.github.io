@@ -46,7 +46,7 @@ const initDb = () => {
             const insertLabel = db.prepare(`
                 INSERT OR IGNORE INTO labels (name, url) VALUES (?, ?)
             `);
-            insertLabel.run('岩波新書', 'https://www.iwanami.co.jp/search/g8910.html');
+            insertLabel.run('岩波新書', 'https://www.iwanami.co.jp/sin/');
             insertLabel.run('中公新書', 'https://www.chuko.co.jp/shinsho/');
             insertLabel.run('ちくま新書', 'https://www.chikumashobo.co.jp/chikuma_shinsho/');
             insertLabel.run('ちくま学芸文庫', 'http://chikumashobo.co.jp/chikuma_gakugei_bunko/');
