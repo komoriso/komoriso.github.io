@@ -48,10 +48,13 @@ const initDb = () => {
             `);
             insertLabel.run('岩波新書', 'https://www.iwanami.co.jp/search/g8910.html');
             insertLabel.run('中公新書', 'https://www.chuko.co.jp/shinsho/');
-            insertLabel.run('ちくま新書', 'https://www.chikumashobo.co.jp/new_book/');
-            insertLabel.run('ちくま学芸文庫', 'https://www.chikumashobo.co.jp/search/?cat=newbook&label=101');
-            insertLabel.run('岩波文庫', 'https://www.iwanami.co.jp/search/g8608.html');
-            insertLabel.run('岩波現代文庫', 'https://www.iwanami.co.jp/search/g8610.html');
+            insertLabel.run('ちくま新書', 'https://www.chikumashobo.co.jp/chikuma_shinsho/');
+            insertLabel.run('ちくま学芸文庫', 'http://chikumashobo.co.jp/chikuma_gakugei_bunko/');
+            insertLabel.run('岩波文庫', 'https://www.iwanami.co.jp/bun/');
+            insertLabel.run('岩波現代文庫', 'https://www.iwanami.co.jp/genbun/');
+            insertLabel.run('講談社学術文庫', 'https://www.kodansha.co.jp/book/labels/g-bunko');
+            insertLabel.run('講談社現代新書', 'https://www.kodansha.co.jp/book/labels/gendai-shinsho');
+            insertLabel.run('ブルーバックス', 'https://www.kodansha.co.jp/book/labels/bluebacks');
             insertLabel.finalize();
 
             resolve();
