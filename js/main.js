@@ -21,23 +21,39 @@ function renderBooks(books) {
     return;
   }
 
-  const rows = books.map((book) => {
-    const title = book.url
-      ? `<a href="${book.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(book.title)}</a>`
-      : escapeHtml(book.title);
+  const grouped = new Map();
+  for (const book of books) {
+    const label = book.label_name || '不明';
+    if (!grouped.has(label)) {
+      grouped.set(label, []);
+    }
+    grouped.get(label).push(book);
+  }
 
-    return `<tr>
-      <td>${escapeHtml(book.label_name)}</td>
-      <td>${title}</td>
-      <td>${escapeHtml(book.author || '')}</td>
-      <td>${escapeHtml(book.published_date)}</td>
-    </tr>`;
-  });
+  const sections = [];
+  for (const [label, labelBooks] of grouped) {
+    const rows = labelBooks.map((book) => {
+      const title = book.url
+        ? `<a href="${book.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(book.title)}</a>`
+        : escapeHtml(book.title);
 
-  container.innerHTML = `<table class="book-table">
-    <thead><tr><th>レーベル</th><th>書名</th><th>著者</th><th>刊行日</th></tr></thead>
-    <tbody>${rows.join('')}</tbody>
-  </table>`;
+      return `<tr>
+        <td>${title}</td>
+        <td>${escapeHtml(book.author || '')}</td>
+        <td>${escapeHtml(book.published_date)}</td>
+      </tr>`;
+    });
+
+    sections.push(`<section class="label-section">
+      <h2>${escapeHtml(label)}</h2>
+      <table class="book-table">
+        <thead><tr><th>書名</th><th>著者</th><th>刊行日</th></tr></thead>
+        <tbody>${rows.join('')}</tbody>
+      </table>
+    </section>`);
+  }
+
+  container.innerHTML = sections.join('');
   container.hidden = false;
   emptyState.hidden = true;
 }
