@@ -236,7 +236,7 @@ async function main() {
     books,
   };
 
-  const outputPath = path.join(__dirname, 'public', 'books.json');
+  const outputPath = path.join(__dirname, 'books.json');
   fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
   console.log(`Wrote ${books.length} books to ${outputPath}`);
 }

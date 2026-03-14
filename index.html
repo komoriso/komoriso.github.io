@@ -2,10 +2,38 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./public/index.html">
-  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新刊一覧 | komoriso.github.io</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <p><a href="./public/index.html">公開ページへ移動</a></p>
+<body data-page="index">
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">komoriso.github.io</p>
+      <div class="hero-row">
+        <div>
+          <h1>新刊と出会うための、静かな一覧。</h1>
+          <p class="hero-copy">前後1か月の新刊情報を、レーベル別に見やすく並べた一覧です。データは NDL Search (国立国会図書館) から取得しています。</p>
+        </div>
+      </div>
+      <div class="meta-panel">
+        <p id="date-range">読み込み中...</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="loading" class="status-panel">新刊データを読み込んでいます...</section>
+      <section id="empty-state" class="status-panel" hidden>
+        <h2>該当する新刊はまだ見つかっていません。</h2>
+        <p>対象期間内のデータが揃うと、ここに表示されます。</p>
+      </section>
+      <section id="book-container" class="book-grid" hidden></section>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
