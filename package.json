@@ -1,24 +1,21 @@
 {
   "name": "newbooks",
   "version": "1.0.0",
-  "description": "",
+  "description": "New release tracker powered by Google Books API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate:books": "node generate-books-json.js",
+    "init-db": "node db.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "axios": "^1.13.6",
-    "cheerio": "^1.2.0",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "node-cron": "^4.2.1",
-    "nodemailer": "^8.0.2",
     "sqlite3": "^5.1.7"
   }
 }

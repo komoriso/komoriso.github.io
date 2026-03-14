@@ -1,179 +1,253 @@
+const page = document.body.dataset.page;
+const apiBase = document.body.dataset.apiBase || '';
+
 document.addEventListener('DOMContentLoaded', () => {
-    const path = window.location.pathname;
-    
-    if (path === '/' || path.includes('index.html')) {
-        initIndexPage();
-    } else if (path.includes('label.html')) {
-        initLabelPage();
-    } else if (path.includes('admin.html')) {
-        initAdminPage();
-    }
+  if (page === 'index') {
+    initIndexPage();
+  } else if (page === 'label') {
+    initLabelPage();
+  } else if (page === 'admin') {
+    initAdminPage();
+  }
 });
 
-// Utility to render book cards
-function renderBooks(books, containerElement) {
-    containerElement.innerHTML = '';
-    
-    if (books.length === 0) {
-        containerElement.style.display = 'none';
-        document.getElementById('empty-state').style.display = 'block';
-        return;
-    }
-    
-    books.forEach(book => {
-        const card = document.createElement('div');
-        card.className = 'book-card animate-fade-in';
-        
-        const labelHtml = book.label_name ? `<span class="book-label">${book.label_name}</span>` : '';
-        const authorHtml = book.author ? `<div class="book-author">✍️ ${book.author}</div>` : '';
-        
-        card.innerHTML = `
-            ${labelHtml}
-            <h3 class="book-title">
-                <a href="${book.url}" target="_blank" rel="noopener noreferrer">${book.title}</a>
-            </h3>
-            ${authorHtml}
-            <div class="book-date">📅 発売: ${book.published_date}</div>
-        `;
-        
-        containerElement.appendChild(card);
-    });
-    
-    document.getElementById('empty-state').style.display = 'none';
-    containerElement.style.display = 'grid';
+function escapeHtml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
-const API_BASE = 'https://xin-kan-lan.onrender.com';
+function formatRange(range) {
+  if (!range) {
+    return '対象期間を表示できません。';
+  }
+
+  return `対象期間: ${range.start} - ${range.end}`;
+}
+
+function resolveThumbnail(book) {
+  if (book.thumbnail) {
+    return `<img class="book-thumb" src="${book.thumbnail}" alt="${escapeHtml(book.title)} の表紙">`;
+  }
+
+  return '<div class="book-thumb placeholder">NO IMAGE</div>';
+}
+
+function renderBooks(books) {
+  const container = document.getElementById('book-container');
+  const emptyState = document.getElementById('empty-state');
+
+  container.innerHTML = '';
+
+  if (!books.length) {
+    container.hidden = true;
+    emptyState.hidden = false;
+    return;
+  }
+
+  const cards = books.map((book) => {
+    const label = book.label_id
+      ? `<a class="book-label" href="/label.html?id=${encodeURIComponent(book.label_id)}">${escapeHtml(book.label_name)}</a>`
+      : `<span class="book-label">${escapeHtml(book.label_name)}</span>`;
+    const isbn = book.isbn ? `<p class="book-meta">ISBN ${escapeHtml(book.isbn)}</p>` : '';
+    const description = book.description
+      ? `<p class="book-description">${escapeHtml(book.description)}</p>`
+      : '';
+    const pages = Number.isInteger(book.page_count)
+      ? `<p class="book-meta">${book.page_count}ページ</p>`
+      : '';
+
+    return `
+      <article class="book-card">
+        <div class="book-cover-wrap">
+          ${resolveThumbnail(book)}
+        </div>
+        <div class="book-body">
+          ${label}
+          <h2 class="book-title">
+            <a href="${book.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(book.title)}</a>
+          </h2>
+          <p class="book-meta">${escapeHtml(book.author || '著者情報なし')}</p>
+          <p class="book-meta">${escapeHtml(book.published_date)}</p>
+          ${isbn}
+          ${pages}
+          ${description}
+        </div>
+      </article>
+    `;
+  });
+
+  container.innerHTML = cards.join('');
+  container.hidden = false;
+  emptyState.hidden = true;
+}
+
+async function loadJson(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Request failed: ${response.status}`);
+  }
+
+  return response.json();
+}
 
 async function initIndexPage() {
-    try {
-        const response = await fetch('/public/books.json');
-        if (!response.ok) throw new Error('books.json not found');
-        const data = await response.json();
+  try {
+    const data = await loadJson('/books.json');
+    const range = data.date_range || data.range;
 
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('date-range').innerHTML = `
-            対象期間: <strong>${data.range.start}</strong> 〜 <strong>${data.range.end}</strong>
-        `;
-
-        renderBooks(data.books, document.getElementById('book-container'));
-
-    } catch (err) {
-        document.getElementById('loading').innerHTML = 'エラーが発生しました。データを取得できません。';
-        console.error(err);
-    }
+    document.getElementById('date-range').textContent = formatRange(range);
+    document.getElementById('loading').hidden = true;
+    renderBooks(data.books || []);
+  } catch (error) {
+    document.getElementById('loading').textContent = '新刊データの読み込みに失敗しました。';
+    console.error(error);
+  }
 }
 
 async function initLabelPage() {
-    const params = new URLSearchParams(window.location.search);
-    const labelId = params.get('id');
-    
-    if (!labelId) {
-        window.location.href = '/index.html';
-        return;
-    }
-    
-    try {
-        // Fetch label name
-        const labelRes = await fetch(`${API_BASE}/api/labels/${labelId}`);
-        if (labelRes.ok) {
-            const labelData = await labelRes.json();
-            document.getElementById('label-name').textContent = labelData.name;
-        }
+  const params = new URLSearchParams(window.location.search);
+  const labelId = params.get('id');
 
-        const response = await fetch(`${API_BASE}/api/labels/${labelId}/books`);
-        if (!response.ok) throw new Error('API Error');
-        const data = await response.json();
-        
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('date-range').innerHTML = `
-            対象期間: <strong>${data.range.start}</strong> 〜 <strong>${data.range.end}</strong>
-        `;
-        
-        renderBooks(data.books, document.getElementById('book-container'));
-        
-    } catch (err) {
-        document.getElementById('loading').innerHTML = 'エラーが発生しました。データを取得できません。';
-        console.error(err);
-    }
+  if (!labelId) {
+    window.location.href = '/index.html';
+    return;
+  }
+
+  try {
+    const [label, data] = await Promise.all([
+      loadJson(`${apiBase}/api/labels/${labelId}`),
+      loadJson(`${apiBase}/api/labels/${labelId}/books`),
+    ]);
+
+    document.getElementById('label-name').textContent = label.name;
+    document.getElementById('date-range').textContent = formatRange(data.date_range || data.range);
+    document.getElementById('loading').hidden = true;
+    renderBooks(data.books || []);
+  } catch (error) {
+    document.getElementById('loading').textContent = 'レーベル別データの読み込みに失敗しました。';
+    console.error(error);
+  }
 }
 
-function initAdminPage() {
-    const loadLabels = async () => {
-        const response = await fetch(`${API_BASE}/api/labels`);
-        const labels = await response.json();
-        const tbody = document.getElementById('label-table-body');
-        tbody.innerHTML = '';
-        
-        labels.forEach(l => {
-            const tr = document.createElement('tr');
-            const statusClass = l.is_active ? 'status-active' : 'status-inactive';
-            const statusText = l.is_active ? '有効' : '無効';
-            const toggleText = l.is_active ? '無効にする' : '有効にする';
-            
-            tr.innerHTML = `
-                <td>${l.id}</td>
-                <td><strong>${l.name}</strong></td>
-                <td><a href="${l.url}" target="_blank">${l.url.substring(0, 30)}...</a></td>
-                <td><span class="status-badge ${statusClass}">${statusText}</span></td>
-                <td>
-                    <button class="btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; margin-right: 0.5rem;" onclick="toggleLabel(${l.id}, ${l.is_active}, '${l.name}', '${l.url}')">${toggleText}</button>
-                    <button class="btn btn-danger" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;" onclick="deleteLabel(${l.id})">削除</button>
-                </td>
-            `;
-            tbody.appendChild(tr);
+function adminRow(label) {
+  const active = Number(label.is_active) === 1;
+  const nextStatusLabel = active ? '無効化' : '有効化';
+
+  return `
+    <tr>
+      <td>${label.id}</td>
+      <td>${escapeHtml(label.name)}</td>
+      <td><a href="${label.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label.url)}</a></td>
+      <td><span class="status ${active ? 'status-on' : 'status-off'}">${active ? '有効' : '無効'}</span></td>
+      <td class="actions">
+        <button type="button" data-action="toggle" data-id="${label.id}" data-name="${escapeHtml(label.name)}" data-url="${escapeHtml(label.url)}" data-active="${active ? 1 : 0}">${nextStatusLabel}</button>
+        <button type="button" class="danger" data-action="delete" data-id="${label.id}">削除</button>
+      </td>
+    </tr>
+  `;
+}
+
+async function refreshLabels() {
+  const labels = await loadJson(`${apiBase}/api/labels`);
+  document.getElementById('label-table-body').innerHTML = labels.map(adminRow).join('');
+  document.getElementById('admin-status').textContent = `${labels.length}件のレーベルを表示中`;
+}
+
+async function initAdminPage() {
+  const tableBody = document.getElementById('label-table-body');
+  const form = document.getElementById('add-label-form');
+
+  try {
+    await refreshLabels();
+  } catch (error) {
+    document.getElementById('admin-status').textContent = 'レーベル一覧の読み込みに失敗しました。';
+    console.error(error);
+  }
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const payload = {
+      name: document.getElementById('new-name').value.trim(),
+      url: document.getElementById('new-url').value.trim(),
+      is_active: 1,
+    };
+
+    try {
+      const response = await fetch(`${apiBase}/api/labels`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Create failed: ${response.status}`);
+      }
+
+      form.reset();
+      await refreshLabels();
+    } catch (error) {
+      alert('レーベルの追加に失敗しました。');
+      console.error(error);
+    }
+  });
+
+  tableBody.addEventListener('click', async (event) => {
+    const button = event.target.closest('button');
+    if (!button) {
+      return;
+    }
+
+    const action = button.dataset.action;
+    const labelId = button.dataset.id;
+
+    if (action === 'delete') {
+      if (!window.confirm('このレーベルを削除しますか？')) {
+        return;
+      }
+
+      try {
+        const response = await fetch(`${apiBase}/api/labels/${labelId}`, { method: 'DELETE' });
+        if (!response.ok) {
+          throw new Error(`Delete failed: ${response.status}`);
+        }
+
+        await refreshLabels();
+      } catch (error) {
+        alert('レーベルの削除に失敗しました。');
+        console.error(error);
+      }
+
+      return;
+    }
+
+    if (action === 'toggle') {
+      const payload = {
+        name: button.dataset.name,
+        url: button.dataset.url,
+        is_active: Number(button.dataset.active) === 1 ? 0 : 1,
+      };
+
+      try {
+        const response = await fetch(`${apiBase}/api/labels/${labelId}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
         });
-    };
 
-    window.toggleLabel = async (id, currentStatus, name, url) => {
-        const newStatus = currentStatus === 1 ? 0 : 1;
-        try {
-            await fetch(`${API_BASE}/api/labels/${id}`, {
-                method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, url, is_active: newStatus })
-            });
-            loadLabels();
-        } catch (e) {
-            alert('更新に失敗しました');
+        if (!response.ok) {
+          throw new Error(`Update failed: ${response.status}`);
         }
-    };
-    
-    window.deleteLabel = async (id) => {
-        if (!confirm('本当に削除しますか？')) return;
-        try {
-            await fetch(`${API_BASE}/api/labels/${id}`, {
-                method: 'DELETE'
-            });
-            loadLabels();
-        } catch (e) {
-            alert('削除に失敗しました');
-        }
-    };
 
-    document.getElementById('add-label-form').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const name = document.getElementById('new-name').value;
-        const url = document.getElementById('new-url').value;
-        
-        try {
-            const res = await fetch(`${API_BASE}/api/labels`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, url, is_active: 1 })
-            });
-            if (res.ok) {
-                document.getElementById('new-name').value = '';
-                document.getElementById('new-url').value = '';
-                loadLabels();
-            } else {
-                alert('追加に失敗しました');
-            }
-        } catch (err) {
-            alert('追加に失敗しました');
-        }
-    });
-
-    // Init flow
-    loadLabels();
+        await refreshLabels();
+      } catch (error) {
+        alert('レーベル状態の更新に失敗しました。');
+        console.error(error);
+      }
+    }
+  });
 }

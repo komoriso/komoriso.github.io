@@ -1,176 +1,247 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
-const path = require('path');
 const fs = require('fs');
+const path = require('path');
 
-const today = new Date();
-const start = new Date(today); start.setMonth(start.getMonth() - 1);
-const end = new Date(today); end.setMonth(end.getMonth() + 1);
-const startStr = start.toISOString().split('T')[0];
-const endStr = end.toISOString().split('T')[0];
+const NDL_OPEN_SEARCH_ENDPOINT = 'https://ndlsearch.ndl.go.jp/api/opensearch';
+const PAGE_SIZE = 20;
+const MAX_PAGES_PER_LABEL = 10;
 
-async function scrapeChuko() {
-    const books = [];
-    try {
-        const url = 'https://www.chuko.co.jp/shinsho/';
-        const response = await axios.get(url);
-        const $ = cheerio.load(response.data);
-        $('li.linkbox').each((i, el) => {
-            const rawText = $(el).text().replace(/\s+/g, ' ').trim();
-            const urlMatch = $(el).find('a').attr('href');
-            const bookUrl = urlMatch ? (urlMatch.startsWith('http') ? urlMatch : 'https://www.chuko.co.jp' + urlMatch) : url;
-            const parts = rawText.split('著');
-            if (parts.length >= 2) {
-                const titleAuthor = parts[0].trim().split(' ');
-                const author = titleAuthor.pop();
-                const title = titleAuthor.join(' ');
-                const m = rawText.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
-                const published_date = m ? `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}` : today.toISOString().split('T')[0];
-                books.push({ label_name: '中公新書', title: title || parts[0], author: author || '', published_date, url: bookUrl });
-            }
-        });
-    } catch (err) {
-        console.error('Chuko Scrape Error:', err.message);
-    }
-    return books;
+const LABELS = [
+  { name: '岩波新書', publisher: '岩波書店', excludePatterns: [] },
+  { name: '岩波文庫', publisher: '岩波書店', excludePatterns: [] },
+  { name: '岩波現代文庫', publisher: '岩波書店', excludePatterns: [] },
+  { name: '中公新書', publisher: '中央公論新社', excludePatterns: ['中公新書ラクレ'] },
+  { name: 'ちくま新書', publisher: '筑摩書房', excludePatterns: [] },
+  { name: 'ちくま学芸文庫', publisher: '筑摩書房', excludePatterns: [] },
+  { name: '講談社現代新書', publisher: '講談社', excludePatterns: [] },
+  { name: '講談社学術文庫', publisher: '講談社', excludePatterns: [] },
+  { name: 'ブルーバックス', publisher: '講談社', excludePatterns: [] },
+];
+
+function getDateRange(baseDate = new Date()) {
+  const start = new Date(baseDate);
+  start.setMonth(start.getMonth() - 1);
+
+  const end = new Date(baseDate);
+  end.setMonth(end.getMonth() + 1);
+
+  return {
+    startText: toDateText(start),
+    endText: toDateText(end),
+  };
 }
 
-async function scrapeChikuma() {
-    const books = [];
-    try {
-        const url = 'https://www.chikumashobo.co.jp/search/?cat=newbook';
-        const response = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-        const $ = cheerio.load(response.data);
-        $('article').each((i, el) => {
-            const rawText = $(el).text().replace(/\s+/g, ' ').trim();
-            const urlMatch = $(el).find('a').attr('href');
-            const bookUrl = urlMatch ? (urlMatch.startsWith('http') ? urlMatch : 'https://www.chikumashobo.co.jp' + urlMatch) : url;
-            if (rawText.includes('ちくま新書') || rawText.includes('ちくま学芸文庫')) {
-                const parts = rawText.split('著');
-                if (parts.length >= 2) {
-                    let beforeAuthor = parts[0].replace(/ちくま新書/g, '').replace(/ちくま学芸文庫/g, '').trim();
-                    const titleAuthor = beforeAuthor.split(' ');
-                    const author = titleAuthor.length > 1 ? titleAuthor.pop() : '';
-                    const title = titleAuthor.join(' ') || beforeAuthor;
-                    const label_name = rawText.includes('ちくま学芸文庫') ? 'ちくま学芸文庫' : 'ちくま新書';
-                    const dateRaw = $(el).parent().find('.whitespace-nowrap.font-romanCon').first().text().trim();
-                    const dm = dateRaw.match(/(\d{4})\/(\d{2})\/(\d{2})/);
-                    const published_date = dm ? `${dm[1]}-${dm[2]}-${dm[3]}` : today.toISOString().split('T')[0];
-                    books.push({ label_name, title: title.trim(), author: author.trim(), published_date, url: bookUrl });
-                }
-            }
-        });
-    } catch (err) {
-        console.error('Chikuma Scrape Error:', err.message);
-    }
-    return books;
+function toDateText(value) {
+  return value.toISOString().split('T')[0];
 }
 
-async function scrapeIwanami() {
-    const books = [];
-    const targets = [
-        { label_name: '岩波新書', url: 'https://www.iwanami.co.jp/sin/' },
-        { label_name: '岩波文庫', url: 'https://www.iwanami.co.jp/bun/' },
-        { label_name: '岩波現代文庫', url: 'https://www.iwanami.co.jp/genbun/' }
-    ];
-    for (const target of targets) {
-        try {
-            const response = await axios.get(target.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-            const $ = cheerio.load(response.data);
-            $('a').each((i, el) => {
-                const href = $(el).attr('href');
-                const linkText = $(el).text().trim().replace(/\s+/g, ' ');
-                if (href && href.includes('/book/b') && linkText.length > 2) {
-                    const parentText = $(el).parent().parent().text().replace(/\s+/g, ' ').trim();
-                    const author = parentText.replace(linkText, '').replace(/著|編|訳|監修/g, '').trim();
-                    const bookUrl = href.startsWith('http') ? href : 'https://www.iwanami.co.jp' + href;
-                    const dm = parentText.match(/(\d{4})\.(\d{2})\.(\d{2})/);
-                    const published_date = dm ? `${dm[1]}-${dm[2]}-${dm[3]}` : today.toISOString().split('T')[0];
-                    books.push({ label_name: target.label_name, title: linkText, author, published_date, url: bookUrl });
-                }
-            });
-        } catch (err) {
-            console.error(`Iwanami Scrape Error (${target.label_name}):`, err.message);
+function decodeXml(value) {
+  return String(value || '')
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .trim();
+}
+
+function stripTags(value) {
+  return decodeXml(value).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function matchAll(content, pattern) {
+  return [...content.matchAll(pattern)].map((match) => decodeXml(match[1]));
+}
+
+function getFirst(content, pattern) {
+  const match = content.match(pattern);
+  return match ? decodeXml(match[1]) : '';
+}
+
+function normalizeIssuedDate(rawValue) {
+  const value = String(rawValue || '').trim();
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    return value;
+  }
+
+  if (/^\d{4}-\d{2}$/.test(value)) {
+    return `${value}-01`;
+  }
+
+  if (/^\d{4}\.\d{1,2}\.\d{1,2}/.test(value)) {
+    const [year, month, day] = value.split(/[^\d]/).filter(Boolean);
+    return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+  }
+
+  if (/^\d{4}\.\d{1,2}$/.test(value)) {
+    const [year, month] = value.split('.');
+    return `${year}-${month.padStart(2, '0')}-01`;
+  }
+
+  return null;
+}
+
+function withinRange(dateText, range) {
+  return dateText >= range.startText && dateText <= range.endText;
+}
+
+function extractDescription(itemXml) {
+  const descriptions = matchAll(itemXml, /<dc:description(?: [^>]*)?>([\s\S]*?)<\/dc:description>/g);
+  const usefulDescriptions = descriptions.filter((entry) => {
+    return !/^\s*\d{4}(?:-\d{2}-\d{2})?\s*$/.test(entry) && entry !== '出版' && entry !== '発売';
+  });
+
+  if (usefulDescriptions.length > 0) {
+    return usefulDescriptions.join(' / ');
+  }
+
+  const rawDescription = getFirst(itemXml, /<description>([\s\S]*?)<\/description>/);
+  return stripTags(rawDescription).replace(/^.*?シリーズ名[:：]/, '').trim();
+}
+
+function extractAuthor(itemXml) {
+  const author = getFirst(itemXml, /<author>([\s\S]*?)<\/author>/);
+  if (!author) {
+    return getFirst(itemXml, /<dc:creator>([\s\S]*?)<\/dc:creator>/);
+  }
+
+  return author.split(',')[0].trim();
+}
+
+function parseItems(xml) {
+  const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
+
+  return items.map((itemXml) => {
+    const identifiers = matchAll(itemXml, /<dc:identifier(?: [^>]*)?>([\s\S]*?)<\/dc:identifier>/g);
+    const issued = getFirst(itemXml, /<dcterms:issued>([\s\S]*?)<\/dcterms:issued>/);
+    const date = getFirst(itemXml, /<dc:date(?: [^>]*)?>([\s\S]*?)<\/dc:date>/);
+    const seriesTitle = getFirst(itemXml, /<dcndl:seriesTitle>([\s\S]*?)<\/dcndl:seriesTitle>/);
+
+    return {
+      title: getFirst(itemXml, /<dc:title>([\s\S]*?)<\/dc:title>/),
+      author: extractAuthor(itemXml),
+      publisher: getFirst(itemXml, /<dc:publisher>([\s\S]*?)<\/dc:publisher>/),
+      published_date: normalizeIssuedDate(issued) || normalizeIssuedDate(date),
+      url: getFirst(itemXml, /<link>([\s\S]*?)<\/link>/),
+      isbn: identifiers.find((value) => /^(97[89][-0-9]+|97[89]\d+)$/.test(value)) || '',
+      description: extractDescription(itemXml),
+      page_count: null,
+      series_title: seriesTitle,
+      label_hint: `${seriesTitle} ${stripTags(getFirst(itemXml, /<description>([\s\S]*?)<\/description>/))}`.trim(),
+    };
+  });
+}
+
+function dedupeBooks(books) {
+  const seen = new Set();
+
+  return books.filter((book) => {
+    const key = book.isbn || `${book.label_name}::${book.title}`;
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+    return true;
+  });
+}
+
+async function fetchLabelBooks(label, range) {
+  const books = [];
+  const fromYear = range.startText.slice(0, 4);
+
+  for (let page = 0; page < MAX_PAGES_PER_LABEL; page += 1) {
+    const url = new URL(NDL_OPEN_SEARCH_ENDPOINT);
+    url.searchParams.set('title', label.name);
+    url.searchParams.set('from', fromYear);
+    url.searchParams.set('cnt', String(PAGE_SIZE));
+    url.searchParams.set('idx', String(page * PAGE_SIZE + 1));
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`NDL OpenSearch request failed for ${label.name}: ${response.status}`);
+    }
+
+    const xml = await response.text();
+    const items = parseItems(xml);
+
+    if (items.length === 0) {
+      break;
+    }
+
+    for (const item of items) {
+      const hint = `${item.label_hint} ${item.title}`.toLowerCase();
+      const normalizedSeriesTitle = String(item.series_title || '').toLowerCase();
+
+      if (!item.published_date || !withinRange(item.published_date, range)) {
+        continue;
+      }
+
+      if (label.excludePatterns.some((pattern) => hint.includes(pattern.toLowerCase()))) {
+        continue;
+      }
+
+      if (normalizedSeriesTitle) {
+        if (!normalizedSeriesTitle.startsWith(label.name.toLowerCase())) {
+          continue;
         }
-    }
-    // Remove duplicates
-    const seen = new Set();
-    return books.filter(b => {
-        const key = b.label_name + b.title;
-        if (seen.has(key)) return false;
-        seen.add(key);
-        return true;
-    });
-}
+      } else if (!hint.includes(label.name.toLowerCase())) {
+        continue;
+      }
 
-async function fetchKodanshaDate(bookUrl) {
-    try {
-        const response = await axios.get(bookUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-        const $ = cheerio.load(response.data);
-        const dateText = $('dd').filter((i, el) => /\d{4}年\d{1,2}月\d{1,2}日/.test($(el).text())).first().text().trim();
-        const m = dateText.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
-        return m ? `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}` : null;
-    } catch (err) {
-        console.error(`Kodansha detail fetch error (${bookUrl}):`, err.message);
-        return null;
-    }
-}
+      if (item.publisher && item.publisher !== label.publisher) {
+        continue;
+      }
 
-async function scrapeKodansha() {
-    const books = [];
-    const targets = [
-        { label_name: '講談社現代新書', url: 'https://www.kodansha.co.jp/book/labels/gendai-shinsho' },
-        { label_name: 'ブルーバックス',  url: 'https://www.kodansha.co.jp/book/labels/bluebacks' },
-        { label_name: '講談社学術文庫', url: 'https://www.kodansha.co.jp/book/labels/g-bunko' }
-    ];
-    for (const target of targets) {
-        try {
-            const response = await axios.get(target.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-            const $ = cheerio.load(response.data);
-            const entries = [];
-            $('a[href*="/book/products/"]').each((i, el) => {
-                const title = $(el).find('strong').first().text().trim();
-                if (!title) return;
-                const rawText = $(el).text().replace(/\s+/g, ' ').trim();
-                const authorMatch = rawText.match(/著[：:]\s*(\S+)/);
-                const author = authorMatch ? authorMatch[1].trim() : '';
-                const href = $(el).attr('href');
-                const bookUrl = href.startsWith('http') ? href : 'https://www.kodansha.co.jp' + href;
-                entries.push({ label_name: target.label_name, title, author, url: bookUrl });
-            });
-            for (const entry of entries) {
-                const published_date = await fetchKodanshaDate(entry.url) ?? today.toISOString().split('T')[0];
-                books.push({ ...entry, published_date });
-            }
-        } catch (err) {
-            console.error(`Kodansha Scrape Error (${target.label_name}):`, err.message);
-        }
+      books.push({
+        label_name: label.name,
+        title: item.title,
+        author: item.author,
+        published_date: item.published_date,
+        url: item.url,
+        isbn: item.isbn,
+        description: item.description,
+        page_count: item.page_count,
+      });
     }
-    // Remove duplicates
-    const seen = new Set();
-    return books.filter(b => {
-        const key = b.label_name + b.title;
-        if (seen.has(key)) return false;
-        seen.add(key);
-        return true;
-    });
+
+    if (items.length < PAGE_SIZE) {
+      break;
+    }
+  }
+
+  return books;
 }
 
 async function main() {
-    console.log('Scraping started at', new Date().toISOString());
-    const [chuko, chikuma, iwanami, kodansha] = await Promise.all([scrapeChuko(), scrapeChikuma(), scrapeIwanami(), scrapeKodansha()]);
-    const allBooks = [...chuko, ...chikuma, ...iwanami, ...kodansha]
-        .filter(b => b.published_date >= startStr && b.published_date <= endStr);
+  const range = getDateRange();
+  const allBooks = [];
 
-    const output = {
-        range: { start: startStr, end: endStr },
-        books: allBooks,
-        generated_at: new Date().toISOString()
-    };
+  for (const label of LABELS) {
+    const labelBooks = await fetchLabelBooks(label, range);
+    allBooks.push(...labelBooks);
+  }
 
-    const outPath = path.join(__dirname, 'public', 'books.json');
-    fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
-    console.log(`Done. ${allBooks.length} books written to ${outPath}`);
+  const books = dedupeBooks(allBooks).sort((left, right) => {
+    return left.published_date.localeCompare(right.published_date) || left.title.localeCompare(right.title, 'ja');
+  });
+
+  const output = {
+    generated_at: new Date().toISOString(),
+    date_range: {
+      start: range.startText,
+      end: range.endText,
+    },
+    books,
+  };
+
+  const outputPath = path.join(__dirname, 'public', 'books.json');
+  fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+  console.log(`Wrote ${books.length} books to ${outputPath}`);
 }
 
-main().catch(err => { console.error(err); process.exit(1); });
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

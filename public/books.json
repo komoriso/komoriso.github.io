@@ -1,590 +1,279 @@
 {
-  "range": {
-    "start": "2026-02-12",
-    "end": "2026-04-12"
+  "generated_at": "2026-03-14T08:32:00.043Z",
+  "date_range": {
+    "start": "2026-02-14",
+    "end": "2026-04-14"
   },
   "books": [
     {
       "label_name": "中公新書",
-      "title": "エリザベス女王 増補版 史上最長・最強のイギリス君主",
-      "author": "君塚直隆",
-      "published_date": "2026-02-20",
-      "url": "https://www.chuko.co.jp/shinsho/2026/02/102897.html"
-    },
-    {
-      "label_name": "中公新書",
-      "title": "明六社 森有礼、西周、福澤諭吉らが集った知的結社",
-      "author": "河野有理",
-      "published_date": "2026-02-20",
-      "url": "https://www.chuko.co.jp/shinsho/2026/02/102896.html"
-    },
-    {
-      "label_name": "中公新書",
-      "title": "懐疑論 古代ギリシアからデカルト、陰謀論まで",
-      "author": "古田徹也",
-      "published_date": "2026-02-20",
-      "url": "https://www.chuko.co.jp/shinsho/2026/02/102894.html"
-    },
-    {
-      "label_name": "中公新書",
-      "title": "戦国北条氏 関東の覇者、五代一〇〇年の軌跡",
-      "author": "山口博",
-      "published_date": "2026-02-20",
-      "url": "https://www.chuko.co.jp/shinsho/2026/02/102895.html"
+      "title": "障害者の居場所 : 支え合う場「福祉型サードプレイス」をつくる",
+      "author": "立脇／恵子",
+      "published_date": "2026-03-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000038-I4876501",
+      "isbn": "",
+      "description": "2026-03",
+      "page_count": null
     },
     {
       "label_name": "ちくま学芸文庫",
-      "title": "図説 和菓子の歴史",
-      "author": "青木直己",
+      "title": "ウィトゲンシュタイン〔増補新版〕 : 言語の限界",
+      "author": "飯田 隆",
       "published_date": "2026-03-12",
-      "url": "https://www.chikumashobo.co.jp/product/9784480097927/"
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513496",
+      "isbn": "9784480513496",
+      "description": "ちくま学芸文庫 ； イ-59-2 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "ファシズムの解剖学",
+      "author": "ロバート・パクストン",
+      "published_date": "2026-03-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513502",
+      "isbn": "9784480513502",
+      "description": "ちくま学芸文庫 ； ハ-63-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "虚偽論入門",
+      "author": "アレックス・Ｃ・マイクロス",
+      "published_date": "2026-03-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513472",
+      "isbn": "9784480513472",
+      "description": "ちくま学芸文庫 ； マ-60-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "現代世界における日常生活",
+      "author": "アンリ・ルフェーヴル",
+      "published_date": "2026-03-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513489",
+      "isbn": "9784480513489",
+      "description": "ちくま学芸文庫 ； ル-5-2 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "社会学の技法",
+      "author": "ハワード・Ｓ・ベッカー",
+      "published_date": "2026-03-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513526",
+      "isbn": "9784480513526",
+      "description": "ちくま学芸文庫 ； ヘ-16-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "スタインベック短篇集 長くのびた盆地",
+      "author": "ジョン・スタインベック",
+      "published_date": "2026-03-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003232750",
+      "isbn": "9784003232750",
+      "description": "岩波文庫 ； 赤327-5 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "政治の擁護",
+      "author": "バーナード・クリック",
+      "published_date": "2026-03-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003403716",
+      "isbn": "9784003403716",
+      "description": "岩波文庫 ； 白37-1 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "ミケーネ文明 : 古代ギリシアの原像",
+      "author": "周藤 芳幸",
+      "published_date": "2026-03-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321040",
+      "isbn": "9784004321040",
+      "description": "岩波新書 ； 新赤版 2104 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "学校のメンタルヘルス : 子ども，教師をどう支えるか",
+      "author": "伊藤 美奈子",
+      "published_date": "2026-03-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321057",
+      "isbn": "9784004321057",
+      "description": "岩波新書 ； 新赤版 2105 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "日本の未来像 : 地球定常文明のデザイン",
+      "author": "広井 良典",
+      "published_date": "2026-03-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321026",
+      "isbn": "9784004321026",
+      "description": "岩波新書 ； 新赤版 2102 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "日本社会党 : 「戦後革新」とは何だったのか",
+      "author": "福永 文夫",
+      "published_date": "2026-03-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004320807",
+      "isbn": "9784004320807",
+      "description": "岩波新書 ； 新赤版 2080 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "彼女たちの「戦後」 : 12人の肖像",
+      "author": "山本 昭宏",
+      "published_date": "2026-03-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321033",
+      "isbn": "9784004321033",
+      "description": "岩波新書 ； 新赤版 2103 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "アフリカ―「経済大陸」の行動原理と地政学",
+      "author": "遠藤貢",
+      "published_date": "2026-03-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121028990",
+      "isbn": "9784121028990",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "ミッテラン : 現代フランスを率いた理想と野望",
+      "author": "吉田徹",
+      "published_date": "2026-03-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029010",
+      "isbn": "9784121029010",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "世界の英語 : 5大陸に広がる多様なEnglishes",
+      "author": "寺澤盾",
+      "published_date": "2026-03-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121028983",
+      "isbn": "9784121028983",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "日本社会と外国人 : 入管政策が照らす80年",
+      "author": "朴沙羅",
+      "published_date": "2026-03-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029027",
+      "isbn": "9784121029027",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
     },
     {
       "label_name": "ちくま新書",
-      "title": "忙しい人のための美術館の歩き方",
-      "author": "ちいさな美術館の学芸員",
-      "published_date": "2026-03-12",
-      "url": "https://www.chikumashobo.co.jp/product/9784480076977/"
+      "title": "ルポ　支援という生き方 : 貧困問題の最前線",
+      "author": "室谷 明津子",
+      "published_date": "2026-04-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077363",
+      "isbn": "9784480077363",
+      "description": "ちくま新書 シリーズ名（読み）：チクマシンショ",
+      "page_count": null
     },
     {
       "label_name": "ちくま新書",
-      "title": "聞く技術 聞いてもらう技術",
-      "author": "東畑開人",
-      "published_date": "2026-03-12",
-      "url": "https://www.chikumashobo.co.jp/product/9784480075093/"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "フェミニズム",
-      "author": "岩波新書  江原 由美子",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b10155824.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "ジャック・ラカン",
-      "author": "岩波新書  松本 卓也",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b10154397.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "孝経 儒教の歴史二千年の旅",
-      "author": "岩波新書  橋本 秀美",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b656075.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "信頼と不信の哲学入門",
-      "author": "岩波新書  キャサリン・ホーリー  稲岡 大志 監 杉本 俊介 監",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b654989.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "フェイクニュースを哲学する",
-      "author": "岩波新書  山田 圭一",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b650790.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "ケアの倫理",
-      "author": "岩波新書  岡野 八代",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b638601.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "言語哲学がはじまる",
-      "author": "岩波新書  野矢 茂樹",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b633363.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "アリストテレスの哲学",
-      "author": "岩波新書  中畑 正志",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b621813.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "スピノザ",
-      "author": "岩波新書  國分 功一郎",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b615243.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "哲人たちの人生談義 ストア哲学をよむ",
-      "author": "岩波新書  國方 栄二",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b608017.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "西田幾多郎の哲学",
-      "author": "岩波新書  小坂 国継",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b605149.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "死者と霊性",
-      "author": "岩波新書  末木 文美士",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b587793.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "道教思想10講",
-      "author": "岩波新書  神塚 淑子",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b527922.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "マックス・ヴェーバー",
-      "author": "岩波新書  今野 元",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b508161.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "日本思想史",
-      "author": "岩波新書  末木 文美士",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b492574.html"
-    },
-    {
-      "label_name": "岩波新書",
-      "title": "新実存主義",
-      "author": "岩波新書  マルクス・ガブリエル  廣瀬 覚",
-      "published_date": "2026-03-12",
-      "url": "https://www.iwanami.co.jp/book/b492575.html"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "生命とは何か　溶けていく「個体」の境界線",
-      "author": "中屋敷",
-      "url": "https://www.kodansha.co.jp/book/products/0000425108",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "日本の自然葬　風葬・土葬から樹木葬・循環葬まで",
-      "author": "高橋",
-      "url": "https://www.kodansha.co.jp/book/products/0000424730",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "今こそ経済学を問い直す　切実な「必要」の声を聴くために",
-      "author": "中村",
-      "url": "https://www.kodansha.co.jp/book/products/0000424072",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "「ふつう」ってなんだろう　病気と健康のあいだ",
-      "author": "美馬",
-      "url": "https://www.kodansha.co.jp/book/products/0000423127",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "松本清張の昭和",
-      "author": "酒井",
-      "url": "https://www.kodansha.co.jp/book/products/0000422900",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "新書　世界現代史　なぜ「力こそ正義」はよみがえったのか",
-      "author": "川北",
-      "url": "https://www.kodansha.co.jp/book/products/0000422825",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "日本のインフラ危機",
-      "author": "岩城",
-      "url": "https://www.kodansha.co.jp/book/products/0000421905",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "コナン・ドイル伝　ホームズよりも事件を呼ぶ男",
-      "author": "篠田",
-      "url": "https://www.kodansha.co.jp/book/products/0000421371",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "日本史を地学から読みなおす",
-      "author": "鎌田",
-      "url": "https://www.kodansha.co.jp/book/products/0000421164",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "太平洋戦争と銀行　なぜ日本は「無謀な戦争」ができたのか",
-      "author": "小野",
-      "url": "https://www.kodansha.co.jp/book/products/0000418608",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "シン・関ヶ原",
-      "author": "高橋",
-      "url": "https://www.kodansha.co.jp/book/products/0000420529",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "なぜ男女格差はなくならないのか",
-      "author": "田中",
-      "url": "https://www.kodansha.co.jp/book/products/0000420316",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "古墳時代の歴史",
-      "author": "松木",
-      "url": "https://www.kodansha.co.jp/book/products/0000420209",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "戦中派　死の淵に立たされた青春とその後",
-      "author": "前田",
-      "url": "https://www.kodansha.co.jp/book/products/0000403996",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "自壊する保守",
-      "author": "菊池",
-      "url": "https://www.kodansha.co.jp/book/products/0000419219",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "カウンセリングとは何か　変化するということ",
-      "author": "東畑",
-      "url": "https://www.kodansha.co.jp/book/products/0000419216",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "秀吉を天下人にした男　羽柴秀長　大大名との外交と領国統治",
-      "author": "黒田",
-      "url": "https://www.kodansha.co.jp/book/products/0000418906",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "宗教の本質",
-      "author": "釈",
-      "url": "https://www.kodansha.co.jp/book/products/0000413940",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "ほんとうの中国　日本人が知らない思考と行動原理",
-      "author": "近藤",
-      "url": "https://www.kodansha.co.jp/book/products/0000418409",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "世界は知財でできている",
-      "author": "稲穂",
-      "url": "https://www.kodansha.co.jp/book/products/0000418104",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "金融数学入門",
-      "author": "冨島",
-      "url": "https://www.kodansha.co.jp/book/products/0000424887",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "読むだけでわかる「積分」　理解すれば、本質が見えてくる",
-      "author": "永野",
-      "url": "https://www.kodansha.co.jp/book/products/0000424837",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "「がん活」のすすめ　科学と名言でつくる「がんを寄せつけない習慣」",
-      "author": "川口",
-      "url": "https://www.kodansha.co.jp/book/products/0000424158",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "読むだけでわかる「微分」　考え方から証明、そして大学数学まで",
-      "author": "永野",
-      "url": "https://www.kodansha.co.jp/book/products/0000423632",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "「心の不調」の脳科学　脳の中で、何が起きているのか",
-      "author": "",
-      "url": "https://www.kodansha.co.jp/book/products/0000422472",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "宇宙は「もつれ」でできている〈新装改訂版〉　「量子論最大の難問」はどう解き明かされたか",
-      "author": "ルイーザ・ギルダー，監・訳：山田",
-      "url": "https://www.kodansha.co.jp/book/products/0000419134",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "ラマヌジャンの数学　無限を掴んだ数学者",
-      "author": "小島",
-      "url": "https://www.kodansha.co.jp/book/products/0000421524",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "宇宙暗黒時代の夜明け　２１ｃｍ線電波で迫る、宇宙１３８億年史",
-      "author": "島袋",
-      "url": "https://www.kodansha.co.jp/book/products/0000421366",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "スキンケアの科学　科学的に正しい皮膚の話",
-      "author": "平山",
-      "url": "https://www.kodansha.co.jp/book/products/0000421187",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "史上最大の大量絶滅では何が起きたのか？　生物種の９６％がいなくなった！？　ペルム紀末の大量絶滅の謎",
-      "author": "土屋",
-      "url": "https://www.kodansha.co.jp/book/products/0000420434",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "アレルギーの科学　なぜ起こるのか　どうして増えているのか",
-      "author": "",
-      "url": "https://www.kodansha.co.jp/book/products/0000420235",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "はじめての圏論　ブンゲン先生の現代数学入門",
-      "author": "加藤",
-      "url": "https://www.kodansha.co.jp/book/products/0000420166",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "最新　日本酒の科学　水・米・麹の伝統の技",
-      "author": "和田",
-      "url": "https://www.kodansha.co.jp/book/products/0000419187",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "超巨大噴火と生命進化　地球規模の環境変動が大量絶滅と進化をもたらした",
-      "author": "佐野",
-      "url": "https://www.kodansha.co.jp/book/products/0000419177",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "腎臓の教科書　体液の循環・浄化から見る驚異の生命維持システム",
-      "author": "髙取",
-      "url": "https://www.kodansha.co.jp/book/products/0000419051",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "空飛ぶ微生物　気候を変え、進化をみちびく驚きの生命体",
-      "author": "牧",
-      "url": "https://www.kodansha.co.jp/book/products/0000418428",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "質量はなぜ存在するのか　「質量の謎」から始まる素粒子物理学入門",
-      "author": "橋本",
-      "url": "https://www.kodansha.co.jp/book/products/0000416857",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "カラー図解　アメリカ版　大学地球科学の教科書　固体地球編（下）堆積・変成・変形・放射年代測定・地震・地球の内部構造",
-      "author": "ジョン・グロツィンガー，著：トム・ジョーダン，監：横山",
-      "url": "https://www.kodansha.co.jp/book/products/0000361857",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "カラー図解　アメリカ版　大学地球科学の教科書　固体地球編（上）プレートテクトニクス・鉱物と岩石・火成岩・火山",
-      "author": "ジョン・グロツィンガー，著：トム・ジョーダン，監：横山",
-      "url": "https://www.kodansha.co.jp/book/products/0000361852",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "生命の起源を問う　地球生命の始まり",
-      "author": "関根",
-      "url": "https://www.kodansha.co.jp/book/products/0000417323",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "アドルノ　非同一性の哲学",
-      "author": "細見",
-      "url": "https://www.kodansha.co.jp/book/products/0000425794",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "蒙古襲来",
-      "author": "網野",
-      "url": "https://www.kodansha.co.jp/book/products/0000425615",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "天文学の誕生　イスラーム文化がもたらしたもの",
-      "author": "三村",
-      "url": "https://www.kodansha.co.jp/book/products/0000425179",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "オイディプース王",
-      "author": "ソポクレース，訳：岡",
-      "url": "https://www.kodansha.co.jp/book/products/0000424021",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "博物学の世紀　リンネと分類の欲望",
-      "author": "松永",
-      "url": "https://www.kodansha.co.jp/book/products/0000423307",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "道徳の系譜学に向けて",
-      "author": "フリードリヒ・ニーチェ，訳：須藤",
-      "url": "https://www.kodansha.co.jp/book/products/0000423270",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "魔性の文化誌",
-      "author": "吉田",
-      "url": "https://www.kodansha.co.jp/book/products/0000422777",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "三代御記　全現代語訳",
-      "author": "倉本",
-      "url": "https://www.kodansha.co.jp/book/products/0000420305",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "精神病に関する医学＝哲学論",
-      "author": "フィリップ・ピネル，訳：影山",
-      "url": "https://www.kodansha.co.jp/book/products/0000424035",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "中右記　躍動する院政時代の群像",
-      "author": "戸田",
-      "url": "https://www.kodansha.co.jp/book/products/0000423123",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "仏像の誕生",
-      "author": "高田",
-      "url": "https://www.kodansha.co.jp/book/products/0000422965",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "建築書",
-      "author": "ウィトルーウィウス，訳：森田",
-      "url": "https://www.kodansha.co.jp/book/products/0000405583",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "遊清五録　現代語訳",
-      "author": "高杉",
-      "url": "https://www.kodansha.co.jp/book/products/0000422475",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "カント　美と倫理とのはざまで",
-      "author": "熊野",
-      "url": "https://www.kodansha.co.jp/book/products/0000422185",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "源氏の薫り",
-      "author": "尾崎",
-      "url": "https://www.kodansha.co.jp/book/products/0000420894",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "建築論",
-      "author": "森田",
-      "url": "https://www.kodansha.co.jp/book/products/0000405581",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "古代国家の歩み　倭から日本へ",
-      "author": "吉田",
-      "url": "https://www.kodansha.co.jp/book/products/0000421496",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "恋する武士　色と権力の日本中世史",
-      "author": "",
-      "url": "https://www.kodansha.co.jp/book/products/0000420877",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "交流する身体　〈病い〉と〈ケア〉の現象学",
-      "author": "西村",
-      "url": "https://www.kodansha.co.jp/book/products/0000420870",
-      "published_date": "2026-03-12"
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "純粋理性批判の超批判",
-      "author": "ヨハン・ゴットフリート・ヘルダー，訳：杉山",
-      "url": "https://www.kodansha.co.jp/book/products/0000418128",
-      "published_date": "2026-03-12"
+      "title": "会社の値段［新版］",
+      "author": "森生 明",
+      "published_date": "2026-04-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077370",
+      "isbn": "9784480077370",
+      "description": "ちくま新書 ； １９１２ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "世界政治１ : 民主化と権威主義化",
+      "author": "岩崎 正洋",
+      "published_date": "2026-04-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077448",
+      "isbn": "9784480077448",
+      "description": "ちくま新書 ； １９０７ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "単身高齢者のリアル : 老後ひとりの住宅問題",
+      "author": "葛西 リサ",
+      "published_date": "2026-04-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077394",
+      "isbn": "9784480077394",
+      "description": "ちくま新書 ； １９１３ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "日本経済を診る : シン・競争の作法",
+      "author": "齊藤 誠",
+      "published_date": "2026-04-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077400",
+      "isbn": "9784480077400",
+      "description": "ちくま新書 ； １９１５ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "シュラクサイの誘惑 : 現代思想にみる無謀な精神",
+      "author": "マーク・リラ",
+      "published_date": "2026-04-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513373",
+      "isbn": "9784480513373",
+      "description": "ちくま学芸文庫 ； リ-12-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "言語起源論の系譜",
+      "author": "互 盛央",
+      "published_date": "2026-04-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513540",
+      "isbn": "9784480513540",
+      "description": "ちくま学芸文庫 ； タ-64-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "増補　南島の神話",
+      "author": "後藤 明",
+      "published_date": "2026-04-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513557",
+      "isbn": "9784480513557",
+      "description": "ちくま学芸文庫 ； コ-55-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "中国の神話・伝説",
+      "author": "伊藤 清司",
+      "published_date": "2026-04-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513564",
+      "isbn": "9784480513564",
+      "description": "ちくま学芸文庫 ； イ-65-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "武器と農具の江戸時代 : 刀狩りから幕末まで",
+      "author": "武井 弘一",
+      "published_date": "2026-04-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513533",
+      "isbn": "9784480513533",
+      "description": "ちくま学芸文庫 ； タ-63-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
     }
-  ],
-  "generated_at": "2026-03-12T13:16:59.489Z"
+  ]
 }
