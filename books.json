@@ -1,0 +1,749 @@
+{
+  "generated_at": "2026-06-01T06:58:10.883Z",
+  "date_range": {
+    "start": "2026-05-01",
+    "end": "2026-07-31"
+  },
+  "books": [
+    {
+      "label_name": "ちくま新書",
+      "title": "サバイバル春秋戦国時代",
+      "author": "川合 章子",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223963889",
+      "isbn": "978-4-480-07742-4",
+      "description": "文献:p245〜247",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "ジャイナ教",
+      "author": "渡辺",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034686565",
+      "isbn": "978-4-06-543800-8",
+      "description": "文献あり",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "ハンムラビ法典",
+      "author": "中田",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034686564",
+      "isbn": "978-4-06-543866-4",
+      "description": "文献あり",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "維摩経とは何か : 空・不二・中道から読むブッダの思想",
+      "author": "植木 雅俊",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223965678",
+      "isbn": "978-4-12-102911-9",
+      "description": "文献:p294〜297",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "宇宙のはじまりと素粒子 : ウロボロスの蛇でたどる現代物理学",
+      "author": "田島",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703552",
+      "isbn": "978-4-06-541260-2",
+      "description": "索引あり",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "継体天皇 : 六世紀に現れた世襲王権の「始祖王」",
+      "author": "河内 春人",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223965676",
+      "isbn": "978-4-12-102910-2",
+      "description": "文献:p245〜248 継体天皇関連年表:p250〜252",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "古文書返却の旅 : 戦後史学史の一齣",
+      "author": "網野 善彦",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223965679",
+      "isbn": "978-4-12-181503-3",
+      "description": "中公新書 ; 1503 NDC(10)：210.029 NDC(9)：210.029",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "最新ワインの科学 : 芳醇な香りと味わいはどのように生まれるのか",
+      "author": "鈴木",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703554",
+      "isbn": "978-4-06-543799-5",
+      "description": "文献あり 索引あり",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "世界政治",
+      "author": "岩崎 正洋",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223963885",
+      "isbn": "978-4-480-07745-5",
+      "description": "ちくま新書 ; 1908 NDC(10)：312 NDC(9)：312",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "政治とは何か",
+      "author": "宇野",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703557",
+      "isbn": "978-4-06-537485-6",
+      "description": "文献あり",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "代議制統治論",
+      "author": "Mill",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223966391",
+      "isbn": "978-4-00-390005-5",
+      "description": "岩波文庫 ; 34-116-9 NDC(10)：313.7 NDC(9)：313.7",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "達人はここを見るいちばんわかる日本美術鑑賞",
+      "author": "青い日記帳",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223963888",
+      "isbn": "978-4-480-07738-7",
+      "description": "ちくま新書 ; 1918 NDC(10)：702.1 NDC(9)：702.1",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "地域と人口減少の経済学 : スマート・シュリンクという選択肢",
+      "author": "小峰 隆夫",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223967999",
+      "isbn": "978-4-12-102907-2",
+      "description": "文献:p172〜173",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "哲学の謎",
+      "author": "野矢",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703559",
+      "isbn": "978-4-06-543915-9",
+      "description": "講談社現代新書 ; 2813 シリーズ名（読み）：コウダンシャ ゲンダイ シンショ ; 2813 NDC(10)：104",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "南北朝時代",
+      "author": "森",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703558",
+      "isbn": "978-4-06-543559-5",
+      "description": "文献あり",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "日本のタワー",
+      "author": "橋爪",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034686566",
+      "isbn": "978-4-06-543723-0",
+      "description": "講談社学術文庫 ; 2923 シリーズ名（読み）：コウダンシャ ガクジュツ ブンコ ; 2923 NDC(10)：523.1",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "日本史の宝箱 : 史料をめぐる52の秘話",
+      "author": "東京大学史料編纂所",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034705820",
+      "isbn": "978-4-12-102909-6",
+      "description": "中公新書 ; 2909 シリーズ名（読み）：チュウコウ シンショ ; 2909 NDC(10)：210.04",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "入門現代政治学 : 選挙から政治家・政党、メディアまで",
+      "author": "松林",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034705819",
+      "isbn": "978-4-12-102908-9",
+      "description": "文献あり 索引あり",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "歩くと心が軽くなるのはなぜか : 散歩の心理学",
+      "author": "元永 拓郎",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223963887",
+      "isbn": "978-4-480-07749-3",
+      "description": "ちくま新書 ; 1917 NDC(10)：146.8 NDC(9)：146.8",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "鈴木大拙 : 世界の禅を生んだ男",
+      "author": "碧海 寿広",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223963886",
+      "isbn": "978-4-480-07741-7",
+      "description": "鈴木大拙略年譜:p319〜321 文献:p322〜333",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "論文から技術文書まで「AI翻訳」で書く理系英語入門",
+      "author": "森",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703553",
+      "isbn": "978-4-06-543801-5",
+      "description": "索引あり",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "和歌と漢詩 : 古典日本語のイメージ",
+      "author": "渡辺",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034686567",
+      "isbn": "978-4-06-543872-5",
+      "description": "索引あり",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "古典注釈入門 : 歴史と技法",
+      "author": "鈴木 健一",
+      "published_date": "2026-05-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513595",
+      "isbn": "9784480513595",
+      "description": "ちくま学芸文庫 ； ス-34-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "自由の論理",
+      "author": "マイケル・ポランニー",
+      "published_date": "2026-05-11",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513755",
+      "isbn": "9784480513755",
+      "description": "ちくま学芸文庫 ； ホ-10-2 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "学ぶ力",
+      "author": "河合 隼雄",
+      "published_date": "2026-05-19",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006023836",
+      "isbn": "9784006023836",
+      "description": "岩波現代文庫 ； 文芸383 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "戦争の世紀を読む : ナチズムと帝国日本を超えて",
+      "author": "佐藤 卓己",
+      "published_date": "2026-05-19",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006004965",
+      "isbn": "9784006004965",
+      "description": "岩波現代文庫 ； 学術496 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "フォークランド戦争",
+      "author": "北川 敬三",
+      "published_date": "2026-06-10",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077530",
+      "isbn": "9784480077530",
+      "description": "ちくま新書 ； １９２３ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "科学否定論はなぜ人をひきつけるのか : 地球平面説から反ワクチンまで",
+      "author": "松村 一志",
+      "published_date": "2026-06-10",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077523",
+      "isbn": "9784480077523",
+      "description": "ちくま新書 ； １９２２ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "世界政治３ : 政党政治のゆくえ",
+      "author": "岩崎 正洋",
+      "published_date": "2026-06-10",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077462",
+      "isbn": "9784480077462",
+      "description": "ちくま新書 ； １９０９ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "兵庫県知事問題　失敗の本質 : 情報不信はなぜ生まれたか",
+      "author": "小林 和樹",
+      "published_date": "2026-06-10",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077516",
+      "isbn": "9784480077516",
+      "description": "ちくま新書 ； １９２０ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "法律の読み方がわかる本",
+      "author": "白石 忠志",
+      "published_date": "2026-06-10",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077509",
+      "isbn": "9784480077509",
+      "description": "ちくま新書 ； １９２１ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "科学的発見のパターン",
+      "author": "Ｎ．Ｒ．ハンソン",
+      "published_date": "2026-06-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513571",
+      "isbn": "9784480513571",
+      "description": "ちくま学芸文庫 ； ハ-64-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "修辞的思考 : 論理でとらえきれぬもの",
+      "author": "香西 秀信",
+      "published_date": "2026-06-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513823",
+      "isbn": "9784480513823",
+      "description": "ちくま学芸文庫 ； コ-45-2 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "日本詩歌の特質",
+      "author": "大岡 信",
+      "published_date": "2026-06-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513793",
+      "isbn": "9784480513793",
+      "description": "ちくま学芸文庫 ； オ-5-3 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "翻訳の常識 : 読解力から翻訳力へ",
+      "author": "朱牟田 夏雄",
+      "published_date": "2026-06-12",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513847",
+      "isbn": "9784480513847",
+      "description": "ちくま学芸文庫 ； シ-50-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "オフェイロン短篇集",
+      "author": "オフェイロン",
+      "published_date": "2026-06-16",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003223123",
+      "isbn": "9784003223123",
+      "description": "岩波文庫 ； 赤231-2 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "長崎の鐘",
+      "author": "永井 隆",
+      "published_date": "2026-06-16",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003123911",
+      "isbn": "9784003123911",
+      "description": "岩波文庫 ； 緑239-1 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "かたちと進化の謎　生物の進化を「数理の目」でよみとく",
+      "author": "生形 貴男",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441930",
+      "isbn": "9784065441930",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "なぜ賃金は上がらないのか　日本経済30年の陥穽",
+      "author": "首藤 若菜",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065443583",
+      "isbn": "9784065443583",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "異常気象の科学　猛暑・豪雨・大雪のしくみと将来予測",
+      "author": "今田 由紀子",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065437247",
+      "isbn": "9784065437247",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "観光を忘れた日本",
+      "author": "山口 誠",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441305",
+      "isbn": "9784065441305",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "現代免疫物語frontier　mRNAワクチン、アクテムラ、CAR－T細胞、腸管免疫の最前線",
+      "author": "岸本 忠三",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065443231",
+      "isbn": "9784065443231",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "宗教建築を体感する　祈る心をかたちにすると",
+      "author": "武澤 秀一",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441787",
+      "isbn": "9784065441787",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "新しい日本地理　地図・統計・移動から読み解く",
+      "author": "重永 瞬",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065437261",
+      "isbn": "9784065437261",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "数学の考え方　発見的問題解決法――ひらめきを生む思考へ",
+      "author": "芳沢 光雄",
+      "published_date": "2026-06-18",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065439173",
+      "isbn": "9784065439173",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "ノーベル賞で語る　現代経済学 : 巨人たちの生涯と学説",
+      "author": "依田高典",
+      "published_date": "2026-06-22",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029140",
+      "isbn": "9784121029140",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "安倍晋三 : 平成・令和の光と闇",
+      "author": "服部龍二",
+      "published_date": "2026-06-22",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029133",
+      "isbn": "9784121029133",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "刑吏の社会史　改版 : 中世ヨーロッパの庶民生活",
+      "author": "阿部謹也",
+      "published_date": "2026-06-22",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121805188",
+      "isbn": "9784121805188",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "身体の美学入門 : 感性から捉えなおす人間の本質",
+      "author": "伊藤亜紗",
+      "published_date": "2026-06-22",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029164",
+      "isbn": "9784121029164",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "不平等と教育 : 日本の格差問題はなぜ解決しないのか",
+      "author": "苅谷剛彦",
+      "published_date": "2026-06-22",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029157",
+      "isbn": "9784121029157",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "物語 インドの歴史 : インダス文明からムガル帝国、現代まで",
+      "author": "堀本武功",
+      "published_date": "2026-06-22",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029126",
+      "isbn": "9784121029126",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "「アメリカの戦争」と世界危機 : イラン侵攻は何をもたらすのか",
+      "author": "三牧 聖子",
+      "published_date": "2026-06-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321149",
+      "isbn": "9784004321149",
+      "description": "岩波新書 ； 新赤版 2114 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "チベット仏教",
+      "author": "吉水 千鶴子",
+      "published_date": "2026-06-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321163",
+      "isbn": "9784004321163",
+      "description": "岩波新書 ； 新赤版 2116 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "沖縄を語りつぐ ある家族の歴史",
+      "author": "川平 朝清",
+      "published_date": "2026-06-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321156",
+      "isbn": "9784004321156",
+      "description": "岩波新書 ； 新赤版 2115 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "中上健次 路地のビジョン",
+      "author": "渡邊 英理",
+      "published_date": "2026-06-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321170",
+      "isbn": "9784004321170",
+      "description": "岩波新書 ； 新赤版 2117 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "まんが　星空の不思議",
+      "author": "藤井 龍二",
+      "published_date": "2026-07-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077554",
+      "isbn": "9784480077554",
+      "description": "ちくま新書 ； １９２７ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "昆虫はなぜ海にいないのか",
+      "author": "朝野 維起",
+      "published_date": "2026-07-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077561",
+      "isbn": "9784480077561",
+      "description": "ちくま新書 ； １９２５ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "思考をみがく禅入門",
+      "author": "山田 史生",
+      "published_date": "2026-07-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077578",
+      "isbn": "9784480077578",
+      "description": "ちくま新書 ； １９２６ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "世界政治４ : 大統領制と議院内閣制",
+      "author": "岩崎 正洋",
+      "published_date": "2026-07-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077479",
+      "isbn": "9784480077479",
+      "description": "ちくま新書 ； １９１０ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "中国の戦争観 : アヘン戦争から軍事大国化まで",
+      "author": "小野寺 史郎",
+      "published_date": "2026-07-09",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077547",
+      "isbn": "9784480077547",
+      "description": "ちくま新書 ； １９２４ シリーズ名（読み）：チクマシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "『ボヴァリー夫人』論〔増補決定版〕　下",
+      "author": "蓮實 重彦",
+      "published_date": "2026-07-13",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513779",
+      "isbn": "9784480513779",
+      "description": "ちくま学芸文庫 ； ハ-1-12 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "『ボヴァリー夫人』論〔増補決定版〕　上",
+      "author": "蓮實 重彦",
+      "published_date": "2026-07-13",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513762",
+      "isbn": "9784480513762",
+      "description": "ちくま学芸文庫 ； ハ-1-11 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "『観無量寿経』講義",
+      "author": "阿満 利麿",
+      "published_date": "2026-07-13",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513861",
+      "isbn": "9784480513861",
+      "description": "ちくま学芸文庫 ； ア-9-12 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "１０万年の世界経済史",
+      "author": "グレゴリー・クラーク",
+      "published_date": "2026-07-13",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513878",
+      "isbn": "9784480513878",
+      "description": "ちくま学芸文庫 ； ク-41-1 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "昭和十年代の陸軍と政治",
+      "author": "筒井 清忠",
+      "published_date": "2026-07-13",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513922",
+      "isbn": "9784480513922",
+      "description": "ちくま学芸文庫 ； ツ-8-2 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "世界論",
+      "author": "ルネ・デカルト",
+      "published_date": "2026-07-13",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513854",
+      "isbn": "9784480513854",
+      "description": "ちくま学芸文庫 ； テ-6-5 シリーズ名（読み）：チクマガクゲイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "ペンギンの世界",
+      "author": "上田 一生",
+      "published_date": "2026-07-16",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065444375",
+      "isbn": "9784065444375",
+      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "裁かれた戦争",
+      "author": "アラン",
+      "published_date": "2026-07-16",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065443699",
+      "isbn": "9784065443699",
+      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "博徒と自由民権　名古屋事件始末記",
+      "author": "長谷川 昇",
+      "published_date": "2026-07-16",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065434123",
+      "isbn": "9784065434123",
+      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "論語　現代に生きる中国の知恵",
+      "author": "貝塚 茂樹",
+      "published_date": "2026-07-16",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065443927",
+      "isbn": "9784065443927",
+      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "軍都を歩く : 基地と住民の地域生活史",
+      "author": "清水亮",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029188",
+      "isbn": "9784121029188",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "三笠宮―昭和天皇末弟の近現代史",
+      "author": "舟橋正真",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029195",
+      "isbn": "9784121029195",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "台湾有事 : 歴史・軍事・安定のメカニズム",
+      "author": "五十嵐隆幸",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029171",
+      "isbn": "9784121029171",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "中公新書",
+      "title": "年貢 : せめぎ合う江戸時代の領主と百姓",
+      "author": "渡辺尚志",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029201",
+      "isbn": "9784121029201",
+      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    }
+  ]
+}
