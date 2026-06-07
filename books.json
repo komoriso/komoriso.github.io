@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T06:58:10.883Z",
+  "generated_at": "2026-06-07T15:16:03.348Z",
   "date_range": {
     "start": "2026-05-01",
     "end": "2026-07-31"
@@ -13,6 +13,16 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223963889",
       "isbn": "978-4-480-07742-4",
       "description": "文献:p245〜247",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "システムの非線形論理 : 世界を創造的に組み直す",
+      "author": "河本",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I39111120947112",
+      "isbn": "",
+      "description": "ちくま学芸文庫 ; カ64-1 シリーズ名（読み）：チクマ ガクゲイ ブンコ ; カ-64-1 NDC(10)：104 NDC(9)：104",
       "page_count": null
     },
     {
@@ -33,6 +43,16 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034686564",
       "isbn": "978-4-06-543866-4",
       "description": "文献あり",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "プロパガンダ入門",
+      "author": "ネイサン・クリック",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I39111120947113",
+      "isbn": "",
+      "description": "ちくま学芸文庫 ; ク40-1 シリーズ名（読み）：チクマ ガクゲイ ブンコ ; ク-40-1 NDC(10)：361.46 NDC(9)：361.46",
       "page_count": null
     },
     {
@@ -66,6 +86,16 @@
       "page_count": null
     },
     {
+      "label_name": "ちくま学芸文庫",
+      "title": "古典注釈入門 : 歴史と技法",
+      "author": "鈴木",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I39111120946874",
+      "isbn": "",
+      "description": "ちくま学芸文庫 ; ス34-1 シリーズ名（読み）：チクマ ガクゲイ ブンコ ; ス-34-1 NDC(10)：910.2 NDC(9)：910.2",
+      "page_count": null
+    },
+    {
       "label_name": "中公新書",
       "title": "古文書返却の旅 : 戦後史学史の一齣",
       "author": "網野 善彦",
@@ -83,6 +113,16 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034703554",
       "isbn": "978-4-06-543799-5",
       "description": "文献あり 索引あり",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま学芸文庫",
+      "title": "自由の論理",
+      "author": "マイケル・ポランニー",
+      "published_date": "2026-05-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I39111120946875",
+      "isbn": "",
+      "description": "ちくま学芸文庫 ; ホ10-2 シリーズ名（読み）：チクマ ガクゲイ ブンコ ; ホ-10-2 NDC(10)：139.3 NDC(9)：139.3",
       "page_count": null
     },
     {
@@ -226,26 +266,6 @@
       "page_count": null
     },
     {
-      "label_name": "ちくま学芸文庫",
-      "title": "古典注釈入門 : 歴史と技法",
-      "author": "鈴木 健一",
-      "published_date": "2026-05-11",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513595",
-      "isbn": "9784480513595",
-      "description": "ちくま学芸文庫 ； ス-34-1 シリーズ名（読み）：チクマガクゲイブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま学芸文庫",
-      "title": "自由の論理",
-      "author": "マイケル・ポランニー",
-      "published_date": "2026-05-11",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513755",
-      "isbn": "9784480513755",
-      "description": "ちくま学芸文庫 ； ホ-10-2 シリーズ名（読み）：チクマガクゲイブンコ",
-      "page_count": null
-    },
-    {
       "label_name": "岩波現代文庫",
       "title": "学ぶ力",
       "author": "河合 隼雄",
@@ -373,86 +393,6 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003123911",
       "isbn": "9784003123911",
       "description": "岩波文庫 ； 緑239-1 シリーズ名（読み）：イワナミブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "かたちと進化の謎　生物の進化を「数理の目」でよみとく",
-      "author": "生形 貴男",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441930",
-      "isbn": "9784065441930",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "なぜ賃金は上がらないのか　日本経済30年の陥穽",
-      "author": "首藤 若菜",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065443583",
-      "isbn": "9784065443583",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "異常気象の科学　猛暑・豪雨・大雪のしくみと将来予測",
-      "author": "今田 由紀子",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065437247",
-      "isbn": "9784065437247",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "観光を忘れた日本",
-      "author": "山口 誠",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441305",
-      "isbn": "9784065441305",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "現代免疫物語frontier　mRNAワクチン、アクテムラ、CAR－T細胞、腸管免疫の最前線",
-      "author": "岸本 忠三",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065443231",
-      "isbn": "9784065443231",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "宗教建築を体感する　祈る心をかたちにすると",
-      "author": "武澤 秀一",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441787",
-      "isbn": "9784065441787",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "新しい日本地理　地図・統計・移動から読み解く",
-      "author": "重永 瞬",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065437261",
-      "isbn": "9784065437261",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ブルーバックス",
-      "title": "数学の考え方　発見的問題解決法――ひらめきを生む思考へ",
-      "author": "芳沢 光雄",
-      "published_date": "2026-06-18",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065439173",
-      "isbn": "9784065439173",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
       "page_count": null
     },
     {
