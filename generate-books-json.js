@@ -21,8 +21,8 @@ function getDateRange(baseDate = new Date()) {
   const year = baseDate.getFullYear();
   const month = baseDate.getMonth(); // 0-indexed
 
-  const start = new Date(year, month - 1, 1);
-  const end = new Date(year, month + 2, 0); // 翌々月の0日 = 翌月末日
+  const start = new Date(year, month, 1); // 今月1日
+  const end = new Date(year, month + 2, 0); // 翌月末日
 
   return {
     startText: toDateText(start),
