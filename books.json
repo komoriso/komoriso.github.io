@@ -1,60 +1,10 @@
 {
-  "generated_at": "2026-06-08T06:38:47.745Z",
+  "generated_at": "2026-06-15T07:15:09.189Z",
   "date_range": {
     "start": "2026-06-01",
     "end": "2026-07-31"
   },
   "books": [
-    {
-      "label_name": "ちくま新書",
-      "title": "フォークランド戦争",
-      "author": "北川 敬三",
-      "published_date": "2026-06-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077530",
-      "isbn": "9784480077530",
-      "description": "ちくま新書 ； １９２３ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "科学否定論はなぜ人をひきつけるのか : 地球平面説から反ワクチンまで",
-      "author": "松村 一志",
-      "published_date": "2026-06-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077523",
-      "isbn": "9784480077523",
-      "description": "ちくま新書 ； １９２２ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "世界政治３ : 政党政治のゆくえ",
-      "author": "岩崎 正洋",
-      "published_date": "2026-06-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077462",
-      "isbn": "9784480077462",
-      "description": "ちくま新書 ； １９０９ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "兵庫県知事問題　失敗の本質 : 情報不信はなぜ生まれたか",
-      "author": "小林 和樹",
-      "published_date": "2026-06-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077516",
-      "isbn": "9784480077516",
-      "description": "ちくま新書 ； １９２０ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "法律の読み方がわかる本",
-      "author": "白石 忠志",
-      "published_date": "2026-06-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077509",
-      "isbn": "9784480077509",
-      "description": "ちくま新書 ； １９２１ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
     {
       "label_name": "ちくま学芸文庫",
       "title": "科学的発見のパターン",
@@ -366,6 +316,66 @@
       "page_count": null
     },
     {
+      "label_name": "岩波現代文庫",
+      "title": "「王朝美」の世界を読みほどく : 平安から鎌倉へ",
+      "author": "千野 香織",
+      "published_date": "2026-07-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006004996",
+      "isbn": "9784006004996",
+      "description": "岩波現代文庫 ； 学術499 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "シングル・マン",
+      "author": "クリストファー・イシャウッド",
+      "published_date": "2026-07-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003720912",
+      "isbn": "9784003720912",
+      "description": "岩波文庫 ； 赤N209-1 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "花魁と油売り 明代人情小説集",
+      "author": "馮夢龍",
+      "published_date": "2026-07-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003203231",
+      "isbn": "9784003203231",
+      "description": "岩波文庫 ； 赤32-3 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "聖ヨハンナ : 奈落への道行き",
+      "author": "ブレヒト",
+      "published_date": "2026-07-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003243947",
+      "isbn": "9784003243947",
+      "description": "岩波文庫 ； 赤439-4 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "中国のグロテスク・リアリズム : 明代白話小説「三言」を読む",
+      "author": "井波 律子",
+      "published_date": "2026-07-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006023850",
+      "isbn": "9784006023850",
+      "description": "岩波現代文庫 ； 文芸385 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "日本政治思想",
+      "author": "松沢 弘陽",
+      "published_date": "2026-07-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006005009",
+      "isbn": "9784006005009",
+      "description": "岩波現代文庫 ； 学術500 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
       "label_name": "中公新書",
       "title": "軍都を歩く : 基地と住民の地域生活史",
       "author": "清水亮",
@@ -376,6 +386,16 @@
       "page_count": null
     },
     {
+      "label_name": "講談社現代新書",
+      "title": "原始仏教　ブッダから大乗成立へ",
+      "author": "清水 俊史",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065444672",
+      "isbn": "9784065444672",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
       "label_name": "中公新書",
       "title": "三笠宮―昭和天皇末弟の近現代史",
       "author": "舟橋正真",
@@ -383,6 +403,16 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029195",
       "isbn": "9784121029195",
       "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "世界史の日本史",
+      "author": "岡崎 勝世",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065444702",
+      "isbn": "9784065444702",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
       "page_count": null
     },
     {
@@ -403,6 +433,56 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029201",
       "isbn": "9784121029201",
       "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "無意識の発見　心に挑んだ精神分析の歴史",
+      "author": "工藤 顕太",
+      "published_date": "2026-07-23",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441077",
+      "isbn": "9784065441077",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "スターリニズム : 帝国再興のプロジェクト",
+      "author": "松井 康浩",
+      "published_date": "2026-07-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321200",
+      "isbn": "9784004321200",
+      "description": "岩波新書 ； 新赤版 2120 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "ヒトとAI",
+      "author": "岡野原 大輔",
+      "published_date": "2026-07-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321224",
+      "isbn": "9784004321224",
+      "description": "岩波新書 ； 新赤版 2122 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "社会保障改革の岐路 : 信頼のセーフティネットは可能か",
+      "author": "宮本 太郎",
+      "published_date": "2026-07-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321194",
+      "isbn": "9784004321194",
+      "description": "岩波新書 ； 新赤版 2119 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "与謝野晶子 火の色の歌人",
+      "author": "今野 寿美",
+      "published_date": "2026-07-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321217",
+      "isbn": "9784004321217",
+      "description": "岩波新書 ； 新赤版 2121 シリーズ名（読み）：イワナミシンショ",
       "page_count": null
     }
   ]
