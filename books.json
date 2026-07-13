@@ -1,60 +1,10 @@
 {
-  "generated_at": "2026-07-06T06:27:55.830Z",
+  "generated_at": "2026-07-13T05:35:22.269Z",
   "date_range": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
   "books": [
-    {
-      "label_name": "ちくま新書",
-      "title": "まんが　星空の不思議",
-      "author": "藤井 龍二",
-      "published_date": "2026-07-09",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077554",
-      "isbn": "9784480077554",
-      "description": "ちくま新書 ； １９２７ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "昆虫はなぜ海にいないのか",
-      "author": "朝野 維起",
-      "published_date": "2026-07-09",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077561",
-      "isbn": "9784480077561",
-      "description": "ちくま新書 ； １９２５ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "思考をみがく禅入門",
-      "author": "山田 史生",
-      "published_date": "2026-07-09",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077578",
-      "isbn": "9784480077578",
-      "description": "ちくま新書 ； １９２６ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "世界政治４ : 大統領制と議院内閣制",
-      "author": "岩崎 正洋",
-      "published_date": "2026-07-09",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077479",
-      "isbn": "9784480077479",
-      "description": "ちくま新書 ； １９１０ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "ちくま新書",
-      "title": "中国の戦争観 : アヘン戦争から軍事大国化まで",
-      "author": "小野寺 史郎",
-      "published_date": "2026-07-09",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480077547",
-      "isbn": "9784480077547",
-      "description": "ちくま新書 ； １９２４ シリーズ名（読み）：チクマシンショ",
-      "page_count": null
-    },
     {
       "label_name": "ちくま学芸文庫",
       "title": "『ボヴァリー夫人』論〔増補決定版〕　下",
@@ -176,16 +126,6 @@
       "page_count": null
     },
     {
-      "label_name": "ブルーバックス",
-      "title": "ギャンブルのからくり　確率・統計であばく「必勝法」のウソ",
-      "author": "谷岡 一郎",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065437988",
-      "isbn": "9784065437988",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
-      "page_count": null
-    },
-    {
       "label_name": "中公新書",
       "title": "軍都を歩く : 基地と住民の地域生活史",
       "author": "清水亮",
@@ -193,16 +133,6 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029188",
       "isbn": "9784121029188",
       "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "原始仏教　ブッダから大乗成立へ",
-      "author": "清水 俊史",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065444672",
-      "isbn": "9784065444672",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
       "page_count": null
     },
     {
@@ -216,26 +146,6 @@
       "page_count": null
     },
     {
-      "label_name": "ブルーバックス",
-      "title": "世界一面白い脳の講義　脳の謎を科学で解き明かす",
-      "author": "日本神経科学学会",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065433881",
-      "isbn": "9784065433881",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "世界史の日本史",
-      "author": "岡崎 勝世",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065444702",
-      "isbn": "9784065444702",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
-      "page_count": null
-    },
-    {
       "label_name": "中公新書",
       "title": "台湾有事 : 歴史・軍事・安定のメカニズム",
       "author": "五十嵐隆幸",
@@ -246,16 +156,6 @@
       "page_count": null
     },
     {
-      "label_name": "ブルーバックス",
-      "title": "南極の氷から探る地球大変動　氷床融解の連鎖はいつ、どのように起こるのか",
-      "author": "菅沼 悠介",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065444856",
-      "isbn": "9784065444856",
-      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
-      "page_count": null
-    },
-    {
       "label_name": "中公新書",
       "title": "年貢 : せめぎ合う江戸時代の領主と百姓",
       "author": "渡辺尚志",
@@ -263,16 +163,6 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029201",
       "isbn": "9784121029201",
       "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "無意識の発見　心に挑んだ精神分析の歴史",
-      "author": "工藤 顕太",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065441077",
-      "isbn": "9784065441077",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
       "page_count": null
     },
     {
@@ -467,7 +357,7 @@
     },
     {
       "label_name": "中公新書",
-      "title": "生命の本質 : 細胞説を覆す「複製」の正体",
+      "title": "生命の本質 : 常識を覆す「複製」の世界",
       "author": "武村政春",
       "published_date": "2026-08-21",
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029218",
@@ -483,6 +373,16 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029225",
       "isbn": "9784121029225",
       "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "税金はどこへ消えた？　元会計検査院長が見た「日本の財政」",
+      "author": "田中 弥生",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065439142",
+      "isbn": "9784065439142",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
       "page_count": null
     }
   ]
