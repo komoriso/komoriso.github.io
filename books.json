@@ -1,10 +1,60 @@
 {
-  "generated_at": "2026-07-13T05:35:22.269Z",
+  "generated_at": "2026-07-20T05:35:25.833Z",
   "date_range": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
   "books": [
+    {
+      "label_name": "ちくま新書",
+      "title": "まんが星空の不思議",
+      "author": "藤井 竜二",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976249",
+      "isbn": "978-4-480-07755-4",
+      "description": "文献:p302",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "昆虫はなぜ海にいないのか",
+      "author": "朝野 維起",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976632",
+      "isbn": "978-4-480-07756-1",
+      "description": "ちくま新書 ; 1925 NDC(10)：486.1 NDC(9)：486.1",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "思考をみがく禅入門",
+      "author": "山田 史生",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976423",
+      "isbn": "978-4-480-07757-8",
+      "description": "文献:p190",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "世界政治",
+      "author": "岩崎 正洋",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976629",
+      "isbn": "978-4-480-07747-9",
+      "description": "ちくま新書 ; 1910 NDC(10)：312 NDC(9)：312",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "中国の戦争観 : アヘン戦争から軍事大国化まで",
+      "author": "小野寺 史郎",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976422",
+      "isbn": "978-4-480-07754-7",
+      "description": "関連年表:p283〜288 文献:p289〜298",
+      "page_count": null
+    },
     {
       "label_name": "ちくま学芸文庫",
       "title": "『ボヴァリー夫人』論〔増補決定版〕　下",
@@ -336,6 +386,36 @@
       "page_count": null
     },
     {
+      "label_name": "岩波現代文庫",
+      "title": "増補 武装SS : ナチスもう一つの暴力装置",
+      "author": "芝 健介",
+      "published_date": "2026-08-20",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006005016",
+      "isbn": "9784006005016",
+      "description": "岩波現代文庫 ； 学術501 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "天使のおそれ : 聖なるもののエピステモロジー",
+      "author": "グレゴリー・ベイトソン",
+      "published_date": "2026-08-20",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003860502",
+      "isbn": "9784003860502",
+      "description": "岩波文庫 ； 青N604-5 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "東京人の堕落時代",
+      "author": "夢野 久作",
+      "published_date": "2026-08-20",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003124017",
+      "isbn": "9784003124017",
+      "description": "岩波文庫 ； 緑240-1 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
       "label_name": "中公新書",
       "title": "漢字と音読みの謎を解く : 呉音・漢音・唐音の奥深い世界",
       "author": "中澤信幸",
@@ -376,13 +456,93 @@
       "page_count": null
     },
     {
+      "label_name": "岩波新書",
+      "title": "イギリス帝国 支配と残影",
+      "author": "木畑 洋一",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321231",
+      "isbn": "9784004321231",
+      "description": "岩波新書 ； 新赤版 2123 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "いじめ後遺症",
+      "author": "斎藤 環",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321248",
+      "isbn": "9784004321248",
+      "description": "岩波新書 ； 新赤版 2124 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
       "label_name": "講談社現代新書",
-      "title": "税金はどこへ消えた？　元会計検査院長が見た「日本の財政」",
+      "title": "はじめてのベルクソン　時間をひらく哲学",
+      "author": "平井 靖史",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065447727",
+      "isbn": "9784065447727",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "姥棄て考 : 老いの場所をさがして",
+      "author": "赤坂 憲雄",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321262",
+      "isbn": "9784004321262",
+      "description": "岩波新書 ； 新赤版 2126 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "高校数学でわかるフーリエ変換〈新装版〉",
+      "author": "竹内 淳",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065453278",
+      "isbn": "9784065453278",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "税金はどこへ行くのか　元会計検査院長が見た「日本の財政」",
       "author": "田中 弥生",
       "published_date": "2026-08-24",
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065439142",
       "isbn": "9784065439142",
       "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "天皇と人権　戦前戦後を貫く「日本的歪み」の正体",
+      "author": "森島 豊",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065448069",
+      "isbn": "9784065448069",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "非核三原則 「唯一の被爆国」が抱える矛盾",
+      "author": "梅原 季哉",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321255",
+      "isbn": "9784004321255",
+      "description": "岩波新書 ； 新赤版 2125 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "量子コンピュータに何ができるか",
+      "author": "小泉 裕康",
+      "published_date": "2026-08-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065448243",
+      "isbn": "9784065448243",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
       "page_count": null
     }
   ]
