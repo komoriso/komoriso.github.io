@@ -1,10 +1,20 @@
 {
-  "generated_at": "2026-07-20T05:35:25.833Z",
+  "generated_at": "2026-07-27T05:45:51.103Z",
   "date_range": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
   "books": [
+    {
+      "label_name": "講談社学術文庫",
+      "title": "ペンギンの世界",
+      "author": "上田",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034806913",
+      "isbn": "978-4-06-544437-5",
+      "description": "文献あり",
+      "page_count": null
+    },
     {
       "label_name": "ちくま新書",
       "title": "まんが星空の不思議",
@@ -23,6 +33,16 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976632",
       "isbn": "978-4-480-07756-1",
       "description": "ちくま新書 ; 1925 NDC(10)：486.1 NDC(9)：486.1",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "裁かれた戦争",
+      "author": "Alain",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034806914",
+      "isbn": "978-4-06-544369-9",
+      "description": "原タイトル: Mars ou la guerre jugéeの抄訳",
       "page_count": null
     },
     {
@@ -53,6 +73,26 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223976422",
       "isbn": "978-4-480-07754-7",
       "description": "関連年表:p283〜288 文献:p289〜298",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "博徒と自由民権 : 名古屋事件始末記",
+      "author": "長谷川",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034806912",
+      "isbn": "978-4-06-543412-3",
+      "description": "講談社学術文庫 ; 2929 シリーズ名（読み）：コウダンシャ ガクジュツ ブンコ ; 2929 NDC(10)：210.63",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社学術文庫",
+      "title": "論語 : 現代に生きる中国の知恵",
+      "author": "貝塚",
+      "published_date": "2026-07-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034806915",
+      "isbn": "978-4-06-544392-7",
+      "description": "年表あり",
       "page_count": null
     },
     {
@@ -173,46 +213,6 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006005009",
       "isbn": "9784006005009",
       "description": "岩波現代文庫 ； 学術500 シリーズ名（読み）：イワナミゲンダイブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "中公新書",
-      "title": "軍都を歩く : 基地と住民の地域生活史",
-      "author": "清水亮",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029188",
-      "isbn": "9784121029188",
-      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "中公新書",
-      "title": "三笠宮―昭和天皇末弟の近現代史",
-      "author": "舟橋正真",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029195",
-      "isbn": "9784121029195",
-      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "中公新書",
-      "title": "台湾有事 : 歴史・軍事・安定のメカニズム",
-      "author": "五十嵐隆幸",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029171",
-      "isbn": "9784121029171",
-      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "中公新書",
-      "title": "年貢 : せめぎ合う江戸時代の領主と百姓",
-      "author": "渡辺尚志",
-      "published_date": "2026-07-23",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029201",
-      "isbn": "9784121029201",
-      "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
       "page_count": null
     },
     {
@@ -343,46 +343,6 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784480513885",
       "isbn": "9784480513885",
       "description": "ちくま学芸文庫 ； ロ-15-1 シリーズ名（読み）：チクマガクゲイブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "お地蔵さん　救いの説話・歴史・民俗",
-      "author": "渡 浩一",
-      "published_date": "2026-08-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065447154",
-      "isbn": "9784065447154",
-      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "ジークフリート伝説集成",
-      "author": "石川 栄作",
-      "published_date": "2026-08-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065448250",
-      "isbn": "9784065448250",
-      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "旧約聖書を読み解く",
-      "author": "雨宮 慧",
-      "published_date": "2026-08-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065447710",
-      "isbn": "9784065447710",
-      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社学術文庫",
-      "title": "親指はなぜ太いのか　直立二足歩行の起原に迫る",
-      "author": "島 泰三",
-      "published_date": "2026-08-10",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065448991",
-      "isbn": "9784065448991",
-      "description": "講談社学術文庫 シリーズ名（読み）：コウダンシャガクジュツブンコ",
       "page_count": null
     },
     {
