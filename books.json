@@ -1,10 +1,50 @@
 {
-  "generated_at": "2026-08-10T03:49:19.049Z",
+  "generated_at": "2026-08-17T02:58:23.831Z",
   "date_range": {
     "start": "2026-08-01",
     "end": "2026-09-30"
   },
   "books": [
+    {
+      "label_name": "ちくま新書",
+      "title": "世界をつくった奴隷の歴史",
+      "author": "布留川 正博",
+      "published_date": "2026-08-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223982376",
+      "isbn": "978-4-480-07759-2",
+      "description": "文献:巻末p1〜5",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "世界政治",
+      "author": "岩崎 正洋",
+      "published_date": "2026-08-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223982372",
+      "isbn": "978-4-480-07748-6",
+      "description": "ちくま新書 ; 1911 NDC(10)：312 NDC(9)：312",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "正義の暴走 : 凡庸な悪についての心理学",
+      "author": "原田 隆之",
+      "published_date": "2026-08-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223982374",
+      "isbn": "978-4-480-07758-5",
+      "description": "文献:p232〜247",
+      "page_count": null
+    },
+    {
+      "label_name": "ちくま新書",
+      "title": "石原莞爾 : 信仰に導かれた戦略家",
+      "author": "Godart",
+      "published_date": "2026-08-01",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I14223982647",
+      "isbn": "978-4-480-07761-5",
+      "description": "文献:p311〜315",
+      "page_count": null
+    },
     {
       "label_name": "ちくま学芸文庫",
       "title": "ブルーメンベルク・コレクション : 哲学・現実・非概念性",
@@ -146,16 +186,6 @@
       "page_count": null
     },
     {
-      "label_name": "講談社現代新書",
-      "title": "はじめてのベルクソン　時間をひらく哲学",
-      "author": "平井 靖史",
-      "published_date": "2026-08-24",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065447727",
-      "isbn": "9784065447727",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
-      "page_count": null
-    },
-    {
       "label_name": "岩波新書",
       "title": "姥棄て考 : 老いの場所をさがして",
       "author": "赤坂 憲雄",
@@ -163,16 +193,6 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321262",
       "isbn": "9784004321262",
       "description": "岩波新書 ； 新赤版 2126 シリーズ名（読み）：イワナミシンショ",
-      "page_count": null
-    },
-    {
-      "label_name": "講談社現代新書",
-      "title": "税金はどこへ行くのか　元会計検査院長が見た「日本の財政」",
-      "author": "田中 弥生",
-      "published_date": "2026-08-24",
-      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065439142",
-      "isbn": "9784065439142",
-      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
       "page_count": null
     },
     {
@@ -336,6 +356,86 @@
       "page_count": null
     },
     {
+      "label_name": "岩波文庫",
+      "title": "カエサル戦記集 アレクサンドリア戦記 他二篇",
+      "author": "高橋 宏幸",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003340738",
+      "isbn": "9784003340738",
+      "description": "岩波文庫 ； 青407-3 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "チューリングの哲学　人工知能と人間機械論",
+      "author": "高橋昌一郎",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065453186",
+      "isbn": "9784065453186",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "会話する細胞",
+      "author": "石川 香",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065451595",
+      "isbn": "9784065451595",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波現代文庫",
+      "title": "建築に何が可能か : 建築と人間と",
+      "author": "原 広司",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784006005030",
+      "isbn": "9784006005030",
+      "description": "岩波現代文庫 ； 学術503 シリーズ名（読み）：イワナミゲンダイブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "生命にとって温度とは何か　生存戦略のカギを握る温度センサーのはたらき",
+      "author": "富永真琴",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065446577",
+      "isbn": "9784065446577",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
+      "label_name": "講談社現代新書",
+      "title": "日本書紀を読む",
+      "author": "神野志 隆光",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065451021",
+      "isbn": "9784065451021",
+      "description": "講談社現代新書 シリーズ名（読み）：コウダンシャゲンダイシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波文庫",
+      "title": "白蛇の妖恋 明代怪異小説集",
+      "author": "馮夢龍",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784003203248",
+      "isbn": "9784003203248",
+      "description": "岩波文庫 ； 赤32-4 シリーズ名（読み）：イワナミブンコ",
+      "page_count": null
+    },
+    {
+      "label_name": "ブルーバックス",
+      "title": "不老長寿の進化学",
+      "author": "山田 俊弘",
+      "published_date": "2026-09-17",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784065429358",
+      "isbn": "9784065429358",
+      "description": "ブルーバックス シリーズ名（読み）：ブルーバックス",
+      "page_count": null
+    },
+    {
       "label_name": "中公新書",
       "title": "思い込みの経済学 : ＡＩ時代のお金・仕事・社会",
       "author": "大竹文雄",
@@ -383,6 +483,46 @@
       "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784121029270",
       "isbn": "9784121029270",
       "description": "中公新書 シリーズ名（読み）：チュウコウシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "アガサ・クリスティのイギリス",
+      "author": "新井 潤美",
+      "published_date": "2026-09-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321309",
+      "isbn": "9784004321309",
+      "description": "岩波新書 ； 新赤版 2130 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "お墓はどうなる : 市場が変えた弔いのかたち",
+      "author": "辻&#917760;井 敦大",
+      "published_date": "2026-09-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321286",
+      "isbn": "9784004321286",
+      "description": "岩波新書 ； 新赤版 2128 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "軍事ビジネスと安全保障 : 何を守るための防衛か",
+      "author": "半田 滋",
+      "published_date": "2026-09-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321279",
+      "isbn": "9784004321279",
+      "description": "岩波新書 ； 新赤版 2127 シリーズ名（読み）：イワナミシンショ",
+      "page_count": null
+    },
+    {
+      "label_name": "岩波新書",
+      "title": "知的障がい者の自立生活 : 行きつ戻りつ，ともに生きる",
+      "author": "三井 さよ",
+      "published_date": "2026-09-24",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784004321293",
+      "isbn": "9784004321293",
+      "description": "岩波新書 ； 新赤版 2129 シリーズ名（読み）：イワナミシンショ",
       "page_count": null
     }
   ]
